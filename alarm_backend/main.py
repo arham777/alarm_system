@@ -6,10 +6,11 @@ from pvcI_health_monitor import (
     compute_pvcI_overall_health_weighted,
     HealthConfig,
 )
+from fastapi.responses import ORJSONResponse
 from config import PVCI_FOLDER
 import os
 
-app = FastAPI(title="Plant Alarm Data System", version="1.0")
+app = FastAPI(title="Plant Alarm Data System", version="1.0", default_response_class=ORJSONResponse)
 
 @app.get("/all-pvci-files")
 def get_all_pvc_files():
@@ -40,19 +41,33 @@ def get_all_pvc_files_data():
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
-@app.get("/pvcI-health/overall")
+@app.get("/pvcI-health/overall", response_class=ORJSONResponse)
 def get_pvcI_overall_health(
     bin_size: str = "10T",
     alarm_threshold: int = 10,
     max_workers: int = 4,
-    per_file_timeout: int | None = 30
+    per_file_timeout: int | None = 30,
+    include_daily: bool = False,   # new: avoid huge payloads by default
+    offset: int = 0,               # new: paginate daily_results
+    limit: int = 20
 ):
-    """Get overall health metrics for all files"""
+    """Get overall health metrics for all files (paginated)."""
     try:
         config = HealthConfig(bin_size=bin_size, alarm_threshold=alarm_threshold)
-        return compute_pvcI_overall_health(PVCI_FOLDER, config, max_workers, per_file_timeout)
+        result = compute_pvcI_overall_health(PVCI_FOLDER, config, max_workers, per_file_timeout)
+
+        # trim or paginate the heavy part
+        if "daily_results" in result:
+            if not include_daily:
+                result.pop("daily_results")
+            else:
+                result["daily_results"] = result["daily_results"][offset: offset + limit]
+
+        return result
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+
+
 
 @app.get("/pvcI-health/overall/weighted")
 def get_pvcI_overall_health_weighted_endpoint(
