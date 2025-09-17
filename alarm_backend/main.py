@@ -1,5 +1,8 @@
 from fastapi import FastAPI, HTTPException
 from pvcI_files import list_pvc_files, read_pvc_file, read_all_pvc_files
+from health_monitor import compute_file_health, compute_overall_health, HealthConfig
+from config import PVCI_FOLDER
+import os
 
 app = FastAPI(title="Plant Alarm Data System", version="1.0")
 
@@ -29,5 +32,41 @@ def get_all_pvc_files_data():
     try:
         files_data = read_all_pvc_files()
         return files_data
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/health/{filename}")
+def get_file_health(filename: str):
+    """Get health metrics for a specific file"""
+    try:
+        # Validate filename
+        if not filename.endswith('.csv'):
+            raise HTTPException(status_code=400, detail="Only CSV files are supported")
+        
+        file_path = os.path.join(PVCI_FOLDER, filename)
+        if not os.path.exists(file_path):
+            raise HTTPException(status_code=404, detail=f"File {filename} not found")
+        
+        # Log file access
+        print(f"Processing file: {file_path}")
+        
+        result = compute_file_health(file_path)
+        return result
+    except HTTPException as he:
+        raise he
+    except Exception as e:
+        print(f"Error processing {filename}: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Error processing file: {str(e)}")
+
+@app.get("/health/overall")
+def get_overall_health(
+    bin_size: str = "10T",
+    alarm_threshold: int = 10,
+    max_workers: int = 4
+):
+    """Get overall health metrics for all files"""
+    try:
+        config = HealthConfig(bin_size=bin_size, alarm_threshold=alarm_threshold)
+        return compute_overall_health(PVCI_FOLDER, config, max_workers)
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
