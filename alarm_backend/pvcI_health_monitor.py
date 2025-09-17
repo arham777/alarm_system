@@ -163,6 +163,8 @@ def compute_pvcI_file_health(
         
         # Build per-source bin statistics (optional for performance)
         source_bin_stats: Dict[str, Any] = {}
+        # Consolidated per-source details to embed health and bin stats together
+        source_details: Dict[str, Any] = {}
         if include_details:
             for src in grouped.columns:
                 src_name = str(src)
@@ -178,19 +180,28 @@ def compute_pvcI_file_health(
                     'unhealthy_bins': unhealthy_bins_count
                 }
 
-                # Only attach details for sources that are not 100% healthy
+                # Compute details list once; keep stats backward-compatible (only add when unhealthy>0)
+                bad_mask = unhealthy_mask[src]
+                details = [
+                    {
+                        'bin_start': idx.isoformat(),
+                        'count': int(grouped.at[idx, src])
+                    }
+                    for idx in grouped.index[bad_mask]
+                ]
                 if unhealthy_bins_count > 0:
-                    bad_mask = unhealthy_mask[src]
-                    details = [
-                        {
-                            'bin_start': idx.isoformat(),
-                            'count': int(grouped.at[idx, src])
-                        }
-                        for idx in grouped.index[bad_mask]
-                    ]
                     stats['unhealthy_bin_details'] = details
 
                 source_bin_stats[src_name] = stats
+
+                # Build consolidated per-source view (health + stats + optional details)
+                health_pct_src = float(healthy_bins_count / total_bins_for_source * 100)
+                consolidated = dict(stats)  # shallow copy
+                consolidated['health_pct'] = health_pct_src
+                # Always include unhealthy_bin_details key for consistent API (empty array when none)
+                if 'unhealthy_bin_details' not in consolidated:
+                    consolidated['unhealthy_bin_details'] = details
+                source_details[src_name] = consolidated
         
         # Summarize repeating alarm sources (optional heavy metric)
         repeating_alarm_sources = []
@@ -225,6 +236,17 @@ def compute_pvcI_file_health(
                     key=lambda x: x[1]
                 )[:3]
             ]
+            # Enrich consolidated source_details with repeating_count and worst flags
+            # repeating_count is simply the number of unhealthy bins for the source
+            for src in grouped.columns:
+                src_name = str(src)
+                if 'source_details' in locals() and src_name in source_details:
+                    source_details[src_name]['repeating_count'] = int(unhealthy_bins_series[src])
+            # Mark worst performing top-3 with rank
+            for rank, (src_name, _health) in enumerate(worst_sources, start=1):
+                if 'source_details' in locals() and src_name in source_details:
+                    source_details[src_name]['is_worst_performing'] = True
+                    source_details[src_name]['worst_rank'] = rank
         
         return {
             'filename': os.path.basename(file_path),
@@ -233,6 +255,8 @@ def compute_pvcI_file_health(
             'unhealthy_count': total_bins - total_healthy,
             'source_health': source_health,
             'source_bin_stats': source_bin_stats if include_details else None,
+            # New consolidated per-source structure for inline health and bins
+            'source_details': source_details if include_details else None,
             'repeating_alarm_sources': repeating_alarm_sources,
             'worst_performing_sources': worst_sources,
             'data_start': start_time.isoformat(),
