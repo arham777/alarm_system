@@ -6361,3 +6361,189 @@
 2025-09-18 13:45:11,330 - health_monitor - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\14jan.csv with separator ','
 2025-09-18 13:45:11,446 - health_monitor - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\14jan.csv in chunks
 2025-09-18 13:45:11,768 - health_monitor - INFO - Successfully read 13149 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\14jan.csv
+2025-09-18 13:45:14,819 - health_monitor - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\15March.csv with separator ','
+2025-09-18 13:45:15,355 - health_monitor - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\15feb.csv with separator ','
+2025-09-18 13:45:15,372 - health_monitor - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\15feb.csv in chunks
+2025-09-18 13:45:16,047 - health_monitor - INFO - Successfully read 8431 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\15feb.csv
+2025-09-18 13:45:16,109 - health_monitor - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\15March.csv in chunks
+2025-09-18 13:45:16,555 - health_monitor - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\15jan.csv with separator ','
+2025-09-18 13:45:16,591 - health_monitor - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\15jan.csv in chunks
+2025-09-18 13:45:17,748 - health_monitor - INFO - Successfully read 14426 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\15March.csv
+2025-09-18 13:45:18,509 - health_monitor - INFO - Successfully read 15144 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\15jan.csv
+2025-09-18 13:45:32,855 - health_monitor - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\01March.csv with separator ','
+2025-09-18 13:45:32,865 - health_monitor - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\01March.csv in chunks
+2025-09-18 13:45:33,036 - health_monitor - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\01feb.csv with separator ','
+2025-09-18 13:45:33,044 - health_monitor - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\01feb.csv in chunks
+2025-09-18 13:45:33,210 - health_monitor - INFO - Successfully read 8746 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\01March.csv
+2025-09-18 13:45:33,227 - health_monitor - INFO - Successfully read 5034 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\01feb.csv
+2025-09-18 13:45:33,308 - health_monitor - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\02March.csv with separator ','
+2025-09-18 13:45:33,313 - health_monitor - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\02March.csv in chunks
+2025-09-18 13:45:33,413 - health_monitor - INFO - Successfully read 5384 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\02March.csv
+2025-09-18 13:45:33,461 - health_monitor - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\02feb.csv with separator ','
+2025-09-18 13:45:33,464 - health_monitor - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\02feb.csv in chunks
+2025-09-18 13:45:33,575 - health_monitor - INFO - Successfully read 3496 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\02feb.csv
+2025-09-18 13:45:36,135 - health_monitor - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\03March.csv with separator ','
+2025-09-18 13:45:36,331 - health_monitor - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\03March.csv in chunks
+2025-09-18 13:45:36,510 - health_monitor - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\03feb.csv with separator ','
+2025-09-18 13:45:36,626 - health_monitor - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\03feb.csv in chunks
+2025-09-18 13:45:37,009 - health_monitor - INFO - Successfully read 14363 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\03March.csv
+2025-09-18 13:45:37,099 - health_monitor - INFO - Successfully read 7334 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\03feb.csv
+2025-09-18 13:45:37,375 - health_monitor - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\04March.csv with separator ','
+2025-09-18 13:45:37,375 - health_monitor - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\04feb.csv with separator ','
+2025-09-18 13:45:37,387 - health_monitor - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\04March.csv in chunks
+2025-09-18 13:45:37,393 - health_monitor - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\04feb.csv in chunks
+2025-09-18 13:45:37,677 - health_monitor - INFO - Successfully read 13887 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\04feb.csv
+2025-09-18 13:45:37,717 - health_monitor - INFO - Successfully read 14103 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\04March.csv
+2025-09-18 13:45:39,408 - health_monitor - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\04jan.csv with separator ','
+2025-09-18 13:45:39,480 - health_monitor - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\04jan.csv in chunks
+2025-09-18 13:45:40,044 - health_monitor - INFO - Successfully read 15643 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\04jan.csv
+2025-09-18 13:45:40,676 - health_monitor - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\05March.csv with separator ','
+2025-09-18 13:45:40,853 - health_monitor - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\05March.csv in chunks
+2025-09-18 13:45:41,141 - health_monitor - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\05feb.csv with separator ','
+2025-09-18 13:45:41,314 - health_monitor - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\05feb.csv in chunks
+2025-09-18 13:45:41,325 - health_monitor - INFO - Successfully read 14297 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\05March.csv
+2025-09-18 13:45:41,473 - health_monitor - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\05jan.csv with separator ','
+2025-09-18 13:45:41,636 - health_monitor - INFO - Successfully read 13308 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\05feb.csv
+2025-09-18 13:45:41,663 - health_monitor - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\05jan.csv in chunks
+2025-09-18 13:45:42,121 - health_monitor - INFO - Successfully read 13600 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\05jan.csv
+2025-09-18 13:45:43,587 - health_monitor - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\06March.csv with separator ','
+2025-09-18 13:45:43,642 - health_monitor - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\06March.csv in chunks
+2025-09-18 13:45:43,941 - health_monitor - INFO - Successfully read 11300 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\06March.csv
+2025-09-18 13:45:44,579 - health_monitor - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\06feb.csv with separator ','
+2025-09-18 13:45:44,646 - health_monitor - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\06feb.csv in chunks
+2025-09-18 13:45:45,158 - health_monitor - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\07March.csv with separator ','
+2025-09-18 13:45:45,310 - health_monitor - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\07March.csv in chunks
+2025-09-18 13:45:45,316 - health_monitor - INFO - Successfully read 13816 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\06feb.csv
+2025-09-18 13:45:45,398 - health_monitor - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\07feb.csv with separator ','
+2025-09-18 13:45:45,414 - health_monitor - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\07feb.csv in chunks
+2025-09-18 13:45:45,554 - health_monitor - INFO - Successfully read 12510 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\07March.csv
+2025-09-18 13:45:45,705 - health_monitor - INFO - Successfully read 11996 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\07feb.csv
+2025-09-18 13:45:46,247 - health_monitor - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\08March.csv with separator ','
+2025-09-18 13:45:46,275 - health_monitor - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\08March.csv in chunks
+2025-09-18 13:45:46,442 - health_monitor - INFO - Successfully read 13572 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\08March.csv
+2025-09-18 13:45:48,516 - health_monitor - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\08feb.csv with separator ','
+2025-09-18 13:45:48,540 - health_monitor - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\08feb.csv in chunks
+2025-09-18 13:45:48,558 - health_monitor - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\08jan.csv with separator ','
+2025-09-18 13:45:48,590 - health_monitor - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\08jan.csv in chunks
+2025-09-18 13:45:48,622 - health_monitor - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\09March.csv with separator ','
+2025-09-18 13:45:48,646 - health_monitor - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\09March.csv in chunks
+2025-09-18 13:45:48,834 - health_monitor - INFO - Successfully read 11872 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\08feb.csv
+2025-09-18 13:45:48,872 - health_monitor - INFO - Successfully read 10244 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\08jan.csv
+2025-09-18 13:45:49,017 - health_monitor - INFO - Successfully read 12095 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\09March.csv
+2025-09-18 13:45:49,366 - health_monitor - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\10March.csv with separator ','
+2025-09-18 13:45:49,383 - health_monitor - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\10March.csv in chunks
+2025-09-18 13:45:49,898 - health_monitor - INFO - Successfully read 12790 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\10March.csv
+2025-09-18 13:45:51,740 - health_monitor - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\10feb.csv with separator ','
+2025-09-18 13:45:51,796 - health_monitor - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\10jan.csv with separator ','
+2025-09-18 13:45:51,821 - health_monitor - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\11March.csv with separator ','
+2025-09-18 13:45:51,828 - health_monitor - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\10feb.csv in chunks
+2025-09-18 13:45:51,842 - health_monitor - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\11March.csv in chunks
+2025-09-18 13:45:51,842 - health_monitor - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\10jan.csv in chunks
+2025-09-18 13:45:51,987 - health_monitor - INFO - Successfully read 2367 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\10jan.csv
+2025-09-18 13:45:52,122 - health_monitor - INFO - Successfully read 13270 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\10feb.csv
+2025-09-18 13:45:52,152 - health_monitor - INFO - Successfully read 11793 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\11March.csv
+2025-09-18 13:45:52,766 - health_monitor - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\11feb.csv with separator ','
+2025-09-18 13:45:52,828 - health_monitor - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\11feb.csv in chunks
+2025-09-18 13:45:52,877 - health_monitor - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\11jan.csv with separator ','
+2025-09-18 13:45:52,971 - health_monitor - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\11jan.csv in chunks
+2025-09-18 13:45:53,196 - health_monitor - INFO - Successfully read 12829 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\11feb.csv
+2025-09-18 13:45:53,337 - health_monitor - INFO - Successfully read 10310 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\11jan.csv
+2025-09-18 13:45:54,874 - health_monitor - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\12March.csv with separator ','
+2025-09-18 13:45:54,896 - health_monitor - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\12feb.csv with separator ','
+2025-09-18 13:45:54,928 - health_monitor - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\12March.csv in chunks
+2025-09-18 13:45:54,966 - health_monitor - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\12feb.csv in chunks
+2025-09-18 13:45:55,103 - health_monitor - INFO - Successfully read 3023 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\12March.csv
+2025-09-18 13:45:55,543 - health_monitor - INFO - Successfully read 16348 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\12feb.csv
+2025-09-18 13:45:55,610 - health_monitor - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\12jan.csv with separator ','
+2025-09-18 13:45:55,692 - health_monitor - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\12jan.csv in chunks
+2025-09-18 13:45:56,026 - health_monitor - INFO - Successfully read 11991 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\12jan.csv
+2025-09-18 13:45:56,283 - health_monitor - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\13March.csv with separator ','
+2025-09-18 13:45:56,330 - health_monitor - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\13feb.csv with separator ','
+2025-09-18 13:45:56,336 - health_monitor - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\13March.csv in chunks
+2025-09-18 13:45:56,346 - health_monitor - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\13feb.csv in chunks
+2025-09-18 13:45:56,596 - health_monitor - INFO - Successfully read 5500 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\13March.csv
+2025-09-18 13:45:56,634 - health_monitor - INFO - Successfully read 12699 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\13feb.csv
+2025-09-18 13:45:58,884 - health_monitor - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\13jan.csv with separator ','
+2025-09-18 13:45:59,030 - health_monitor - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\14March.csv with separator ','
+2025-09-18 13:45:59,030 - health_monitor - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\13jan.csv in chunks
+2025-09-18 13:45:59,085 - health_monitor - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\14March.csv in chunks
+2025-09-18 13:45:59,494 - health_monitor - INFO - Successfully read 13870 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\14March.csv
+2025-09-18 13:45:59,522 - health_monitor - INFO - Successfully read 13052 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\13jan.csv
+2025-09-18 13:45:59,616 - health_monitor - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\14feb.csv with separator ','
+2025-09-18 13:45:59,645 - health_monitor - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\14feb.csv in chunks
+2025-09-18 13:45:59,822 - health_monitor - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\14jan.csv with separator ','
+2025-09-18 13:45:59,840 - health_monitor - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\14jan.csv in chunks
+2025-09-18 13:45:59,946 - health_monitor - INFO - Successfully read 12027 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\14feb.csv
+2025-09-18 13:46:00,092 - health_monitor - INFO - Successfully read 13149 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\14jan.csv
+2025-09-18 13:46:02,064 - health_monitor - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\15March.csv with separator ','
+2025-09-18 13:46:02,108 - health_monitor - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\15March.csv in chunks
+2025-09-18 13:46:02,168 - health_monitor - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\15feb.csv with separator ','
+2025-09-18 13:46:02,235 - health_monitor - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\15feb.csv in chunks
+2025-09-18 13:46:02,466 - health_monitor - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\15jan.csv with separator ','
+2025-09-18 13:46:02,522 - health_monitor - INFO - Successfully read 8431 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\15feb.csv
+2025-09-18 13:46:02,562 - health_monitor - INFO - Successfully read 14426 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\15March.csv
+2025-09-18 13:46:02,563 - health_monitor - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\15jan.csv in chunks
+2025-09-18 13:46:02,908 - health_monitor - INFO - Successfully read 15144 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\15jan.csv
+2025-09-18 13:46:03,240 - health_monitor - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\16March.csv with separator ','
+2025-09-18 13:46:03,310 - health_monitor - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\16March.csv in chunks
+2025-09-18 13:46:03,686 - health_monitor - INFO - Successfully read 12722 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\16March.csv
+2025-09-18 13:46:05,703 - health_monitor - INFO - Extracting metadata for source EI1104 from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\12feb.csv between 2025-02-12T10:20:00+00:00 and 2025-02-12T10:30:00+00:00
+2025-09-18 13:46:05,863 - health_monitor - INFO - Read CSV with columns: ['Event Time', 'Location Tag', 'Source', 'Condition', 'Action', 'Priority', 'Description', 'Value', 'Units']
+2025-09-18 13:46:06,053 - health_monitor - INFO - Total rows before source filter: 16326
+2025-09-18 13:46:06,064 - health_monitor - INFO - Rows after source filter for EI1104: 315
+2025-09-18 13:46:06,072 - health_monitor - INFO - Rows after datetime conversion: 315
+2025-09-18 13:46:06,072 - health_monitor - INFO - Sample timestamps: [Timestamp('2025-02-12 23:17:04.500000'), Timestamp('2025-02-12 23:16:34.949000'), Timestamp('2025-02-12 23:16:14.300000'), Timestamp('2025-02-12 23:16:12.400000'), Timestamp('2025-02-12 23:15:59.718000')]
+2025-09-18 13:46:06,081 - health_monitor - INFO - Filtering between 2025-02-12 10:20:00 and 2025-02-12 10:30:00
+2025-09-18 13:46:06,085 - health_monitor - INFO - Rows after time filter (expanded window): 268
+2025-09-18 13:46:06,086 - health_monitor - INFO - Extracted metadata: {'location_tag': '1100', 'condition': 'PVHIGH', 'action': 'OK', 'priority': 'H 00', 'description': 'PU1104 CURRENT', 'value': '198.739', 'units': 'amp'}
+2025-09-18 13:46:34,351 - health_monitor - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\01March.csv with separator ','
+2025-09-18 13:46:34,352 - health_monitor - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\01feb.csv with separator ','
+2025-09-18 13:46:34,354 - health_monitor - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\02March.csv with separator ','
+2025-09-18 13:46:34,365 - health_monitor - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\01March.csv in chunks
+2025-09-18 13:46:34,376 - health_monitor - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\01feb.csv in chunks
+2025-09-18 13:46:34,376 - health_monitor - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\02March.csv in chunks
+2025-09-18 13:46:34,376 - health_monitor - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\02feb.csv with separator ','
+2025-09-18 13:46:34,388 - health_monitor - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\02feb.csv in chunks
+2025-09-18 13:46:34,571 - health_monitor - INFO - Successfully read 3496 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\02feb.csv
+2025-09-18 13:46:34,579 - health_monitor - INFO - Successfully read 5384 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\02March.csv
+2025-09-18 13:46:34,592 - health_monitor - INFO - Successfully read 5034 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\01feb.csv
+2025-09-18 13:46:34,607 - health_monitor - INFO - Successfully read 8746 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\01March.csv
+2025-09-18 13:46:35,103 - health_monitor - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\03March.csv with separator ','
+2025-09-18 13:46:35,210 - health_monitor - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\03March.csv in chunks
+2025-09-18 13:46:35,822 - health_monitor - INFO - Successfully read 14363 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\03March.csv
+2025-09-18 13:46:36,110 - health_monitor - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\03feb.csv with separator ','
+2025-09-18 13:46:36,196 - health_monitor - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\03feb.csv in chunks
+2025-09-18 13:46:36,397 - health_monitor - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\04March.csv with separator ','
+2025-09-18 13:46:36,447 - health_monitor - INFO - Successfully read 7334 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\03feb.csv
+2025-09-18 13:46:36,486 - health_monitor - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\04March.csv in chunks
+2025-09-18 13:46:36,732 - health_monitor - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\04feb.csv with separator ','
+2025-09-18 13:46:36,751 - health_monitor - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\04feb.csv in chunks
+2025-09-18 13:46:36,848 - health_monitor - INFO - Successfully read 14103 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\04March.csv
+2025-09-18 13:46:37,047 - health_monitor - INFO - Successfully read 13887 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\04feb.csv
+2025-09-18 13:46:38,688 - health_monitor - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\04jan.csv with separator ','
+2025-09-18 13:46:38,717 - health_monitor - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\04jan.csv in chunks
+2025-09-18 13:46:39,137 - health_monitor - INFO - Successfully read 15643 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\04jan.csv
+2025-09-18 13:46:39,263 - health_monitor - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\05March.csv with separator ','
+2025-09-18 13:46:39,297 - health_monitor - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\05March.csv in chunks
+2025-09-18 13:46:39,620 - health_monitor - INFO - Successfully read 14297 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\05March.csv
+2025-09-18 13:46:40,091 - health_monitor - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\05feb.csv with separator ','
+2025-09-18 13:46:40,185 - health_monitor - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\05feb.csv in chunks
+2025-09-18 13:46:40,624 - health_monitor - INFO - Successfully read 13308 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\05feb.csv
+2025-09-18 13:46:40,824 - health_monitor - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\05jan.csv with separator ','
+2025-09-18 13:46:40,863 - health_monitor - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\05jan.csv in chunks
+2025-09-18 13:46:41,325 - health_monitor - INFO - Successfully read 13600 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\05jan.csv
+2025-09-18 13:46:42,994 - health_monitor - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\06March.csv with separator ','
+2025-09-18 13:46:43,073 - health_monitor - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\06March.csv in chunks
+2025-09-18 13:46:44,070 - health_monitor - INFO - Successfully read 11300 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\06March.csv
+2025-09-18 13:46:44,267 - health_monitor - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\06feb.csv with separator ','
+2025-09-18 13:46:44,368 - health_monitor - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\06feb.csv in chunks
+2025-09-18 13:46:44,957 - health_monitor - INFO - Successfully read 13816 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\06feb.csv
+2025-09-18 13:46:45,417 - health_monitor - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\07March.csv with separator ','
+2025-09-18 13:46:45,509 - health_monitor - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\07March.csv in chunks
+2025-09-18 13:46:45,753 - health_monitor - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\07feb.csv with separator ','
+2025-09-18 13:46:45,810 - health_monitor - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\07feb.csv in chunks
+2025-09-18 13:46:45,966 - health_monitor - INFO - Successfully read 12510 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\07March.csv
+2025-09-18 13:46:46,212 - health_monitor - INFO - Successfully read 11996 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\07feb.csv
+2025-09-18 13:46:47,120 - health_monitor - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\08March.csv with separator ','
+2025-09-18 13:46:47,150 - health_monitor - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\08March.csv in chunks
+2025-09-18 13:46:47,442 - health_monitor - INFO - Successfully read 13572 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\08March.csv
