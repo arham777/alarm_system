@@ -5,21 +5,23 @@ import { PlantSelector } from '@/components/dashboard/PlantSelector';
 import { InsightCards } from '@/components/dashboard/InsightCards';
 import { UnhealthyBarChart } from '@/components/dashboard/UnhealthyBarChart';
 import { ErrorState } from '@/components/dashboard/ErrorState';
+import UnhealthySourcesChart from '@/components/UnhealthySourcesChart';
+import UnhealthySourcesBarChart from '@/components/UnhealthySourcesBarChart';
 import { useAuth } from '@/hooks/useAuth';
 import { usePlantHealth } from '@/hooks/usePlantHealth';
 import { Plant } from '@/types/dashboard';
+import { fetchPlants } from '@/api/plantHealth';
 
-// Mock plants data - in a real app this would come from an API
-const mockPlants: Plant[] = [
-  { id: 'pvcI', name: 'PVC-I', status: 'active' },
-  { id: 'pvcII', name: 'PVC-II', status: 'inactive' },
-  { id: 'reactor1', name: 'Reactor-1', status: 'active' },
-];
+
+// Default plant used before API loads
+const defaultPlant: Plant = { id: 'pvcI', name: 'PVC-I', status: 'active' };
 
 export default function DashboardPage() {
   const navigate = useNavigate();
   const { isAuthenticated, isLoading: authLoading } = useAuth();
-  const [selectedPlant, setSelectedPlant] = useState<Plant>(mockPlants[0]);
+  const [selectedPlant, setSelectedPlant] = useState<Plant>(defaultPlant);
+  const [plants, setPlants] = useState<Plant[]>([]);
+  const [plantsLoading, setPlantsLoading] = useState<boolean>(true);
   const [topN, setTopN] = useState<1 | 3>(1);
   
   const { 
@@ -35,6 +37,27 @@ export default function DashboardPage() {
       navigate('/signin', { replace: true });
     }
   }, [isAuthenticated, authLoading, navigate]);
+
+  // Load plants from backend
+  useEffect(() => {
+    let mounted = true;
+    async function load() {
+      try {
+        setPlantsLoading(true);
+        const list = await fetchPlants();
+        if (!mounted) return;
+        setPlants(list);
+        const preferred = list.find(p => p.status === 'active') || list[0];
+        if (preferred && preferred.id !== selectedPlant.id) {
+          setSelectedPlant(preferred);
+        }
+      } finally {
+        if (mounted) setPlantsLoading(false);
+      }
+    }
+    load();
+    return () => { mounted = false; };
+  }, []);
 
   if (authLoading) {
     return (
@@ -86,10 +109,10 @@ export default function DashboardPage() {
         {/* Plant Selector */}
         <div className="flex items-center justify-between">
           <PlantSelector
-            plants={mockPlants}
+            plants={plants}
             selectedPlant={selectedPlant}
             onPlantChange={handlePlantChange}
-            disabled={mockPlants.length <= 1}
+            disabled={plantsLoading || plants.length <= 1}
           />
         </div>
 
@@ -105,14 +128,23 @@ export default function DashboardPage() {
           isLoading={isLoading}
         />
 
-        {/* Unhealthy Sources Chart */}
-        <UnhealthyBarChart
-          data={data?.unhealthyBars || []}
-          threshold={10}
-          topN={topN}
-          onTopNChange={handleTopNChange}
-          isLoading={isLoading}
-        />
+        {/* Charts Section */}
+        <div className="space-y-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <UnhealthyBarChart
+              data={data?.unhealthyBars || []}
+              threshold={10}
+              topN={topN}
+              onTopNChange={handleTopNChange}
+              isLoading={isLoading}
+            />
+
+            <UnhealthySourcesChart />
+          </div>
+          
+          {/* New Simple Bar Chart */}
+          <UnhealthySourcesBarChart />
+        </div>
       </div>
     </PageShell>
   );

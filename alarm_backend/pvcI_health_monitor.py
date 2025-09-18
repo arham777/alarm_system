@@ -9,6 +9,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed, wait
 from config import PVCI_FOLDER
 from pvcI_files import read_pvc_file, list_pvc_files
 
+
 # Configure logging
 logging.basicConfig(
     level=logging.INFO,
@@ -117,26 +118,58 @@ def read_csv_smart(file_path: str, config: HealthConfig = DEFAULT_CONFIG) -> pd.
     except Exception as e:
         logger.error(f"Error reading file {file_path}: {str(e)}")
         raise ValueError(f"Failed to read file: {str(e)}")
+
+
+import pandas as pd
+import math
+from typing import Dict, Any, List
+
+def group_events_by_source_with_timegap(df, bin_size: str = '10T', max_gap_minutes: int = None):
+    """
+    Groups events by source into FIXED 10-min bins (non-overlapping).
+    - Bins via dt.floor(bin_size) for strict "in 10 minutes" checks.
+    - Ignores gaps; counts hits per bin.
+    - If max_gap_minutes provided, optionally split bins with large internal gaps (future-proof).
+    - Returns DF with hits, first/last ts, fixed window=10 min per bin.
+    """
+    if df.empty:
+        return pd.DataFrame()
+
+    df = df.sort_values("__ts__").reset_index(drop=True)
+    df['bin_start'] = df['__ts__'].dt.floor(bin_size)
+    df['bin_end'] = df['bin_start'] + pd.Timedelta(bin_size)
+
+    # Group by source + bin, agg stats
+    def bin_stats(group):
+        ts = group['__ts__']
+        return pd.Series({
+            "__source__": group.name[0],  # source
+            "bin_start": group.name[1],   # bin_start as index
+            "hits": len(group),
+            "first_event_ts": ts.min(),
+            "last_event_ts": ts.max(),
+            "duration_seconds": (ts.max() - ts.min()).total_seconds() if len(ts) > 1 else 0,
+            "window_minutes": int(pd.Timedelta(bin_size).total_seconds() / 60),  # Fixed 10
+        })
+
+    grouped_runs = df.groupby(['__source__', 'bin_start']).apply(bin_stats).reset_index(drop=True)
+
+    # Compute rate (hits / 10 min, even if actual duration <10)
+    grouped_runs['window_minutes'] = 10  # Override if needed
+    grouped_runs['rate_per_min'] = round(grouped_runs['hits'] / 10.0, 6)
+
+    # Only include non-empty bins (hits >=1)
+    grouped_runs = grouped_runs[grouped_runs['hits'] >= 1]
+
+    return grouped_runs
+
+
 def compute_pvcI_file_health(
     file_path: str,
     config: HealthConfig = DEFAULT_CONFIG,
     include_details: bool = True
 ) -> Dict[str, Any]:
-    """
-    Compute health for one PVC-I day file and return a JSON-serializable dict.
-
-    Enhancements:
-      - Keeps original structure (filename, source_details, health_pct, etc.)
-      - Enriches `unhealthy_bin_details` per source with:
-          bin_start, bin_end, window_minutes,
-          hits, threshold, over_by, over_pct, rate_per_min,
-          first_event_ts, last_event_ts, unique_event_minutes,
-          source, status="unhealthy"
-    """
-    import pandas as pd
-    from pandas.tseries.frequencies import to_offset
-
-    # -------------------- 0) Read CSV via your helper --------------------
+    """Compute health for one PVC-I day file using FIXED bin grouping per source."""
     try:
         df = read_csv_smart(file_path, config)
     except Exception as e:
@@ -150,40 +183,6 @@ def compute_pvcI_file_health(
         }
 
     filename = os.path.basename(file_path)
-
-    # Empty / invalid DF guard
-    if df is None or len(df) == 0:
-        return {
-            "filename": filename,
-            "num_sources": 0,
-            "health_pct": 100.0,
-            "unhealthy_count": 0,
-            "source_details": {}
-        }
-
-    # -------------------- 1) Resolve columns --------------------
-    # Timestamp column candidates commonly seen in PVC-I dumps
-    ts_candidates = ("timestamp", "Timestamp", "time", "Time", "TIMESTAMP", "Event Time", "event_time")
-    ts_col = next((c for c in ts_candidates if c in df.columns), None)
-    if ts_col is None:
-        # If your reader standardizes to a known name, set it here:
-        # ts_col = "__ts__"
-        # else: fail
-        raise ValueError(f"No timestamp column found in {filename}. "
-                         f"Tried {list(ts_candidates)}; got columns {list(df.columns)}")
-
-    source_candidates = ("Source", "source", "AlarmSource", "alarm_source", "SRC", "src")
-    source_col = next((c for c in source_candidates if c in df.columns), None)
-    if source_col is None:
-        raise ValueError(f"No source column found in {filename}. "
-                         f"Tried {list(source_candidates)}; got columns {list(df.columns)}")
-
-    # -------------------- 2) Normalize timestamps (UTC, monotonic) --------------------
-    ts = pd.to_datetime(df[ts_col], errors="coerce", utc=True)
-    df = df.copy()
-    df["__ts__"] = ts
-    df = df.dropna(subset=["__ts__", source_col]).sort_values("__ts__").reset_index(drop=True)
-
     if df.empty:
         return {
             "filename": filename,
@@ -193,128 +192,83 @@ def compute_pvcI_file_health(
             "source_details": {}
         }
 
-    # -------------------- 3) Window config --------------------
-    window_minutes = getattr(config, "window_minutes", 10) if hasattr(config, "window_minutes") else 10
-    alarm_threshold = getattr(config, "alarm_threshold", 10) if hasattr(config, "alarm_threshold") else 10
-
-    bin_freq = f"{int(window_minutes)}T"
-    off = to_offset(bin_freq)
-
-    first_ts = df["__ts__"].min()
-    last_ts = df["__ts__"].max()
-
-    # Full grid covering [floor(first), ceil(last)+freq) at 10-min steps
-    grid_start = first_ts.floor(bin_freq)
-    grid_end_excl = last_ts.ceil(bin_freq) + off
-    full_bins = pd.date_range(start=grid_start, end=grid_end_excl, freq=bin_freq, inclusive="left")
-    if len(full_bins) == 0:
-        full_bins = pd.DatetimeIndex([first_ts.floor(bin_freq)])
-
-    # -------------------- 4) Count hits per source per bin --------------------
-    df["__bin_start__"] = df["__ts__"].dt.floor(bin_freq)
-    counts = (
-        df.groupby([source_col, "__bin_start__"])
-          .size()
-          .rename("hits")
-          .reset_index()
-    )
-
-    grouped = (
-        counts.pivot(index="__bin_start__", columns=source_col, values="hits")
-              .reindex(full_bins, fill_value=0)
-              .sort_index()
-    )
-    grouped.index.name = "__bin_start__"
-
-    total_bins = int(len(grouped.index))
-    if total_bins == 0:
+    # --- Normalize & sort ---
+    df["__ts__"] = pd.to_datetime(df["Event Time"], errors="coerce", utc=True)
+    df["__source__"] = df["Source"].astype(str).str.strip()
+    df = df.dropna(subset=["__ts__", "__source__"]).sort_values("__ts__").reset_index(drop=True)
+    if df.empty:
         return {
             "filename": filename,
-            "num_sources": int(len(grouped.columns)),
+            "num_sources": 0,
             "health_pct": 100.0,
             "unhealthy_count": 0,
             "source_details": {}
         }
 
-    # -------------------- 5) Per-source health & enriched unhealthy details --------------------
+    # --- FIXED bin grouping (replaces dynamic gap logic) ---
+    grouped_runs = group_events_by_source_with_timegap(
+        df, bin_size=config.bin_size  # Now uses '10T'
+    )
+
+    alarm_threshold = int(getattr(config, "alarm_threshold", 10) or 10)
+    grouped_runs["is_unhealthy"] = grouped_runs["hits"] >= alarm_threshold
+
+    # --- Build source_details ---
     source_details: Dict[str, Any] = {}
     unhealthy_total = 0
+    for src, src_runs in grouped_runs.groupby("__source__"):
+        total_runs = len(src_runs)
+        unhealthy_runs = int(src_runs["is_unhealthy"].sum())
+        healthy_runs = total_runs - unhealthy_runs
+        unhealthy_total += unhealthy_runs
 
-    def _window_end(t0):
-        return t0 + off
+        health_pct = round((healthy_runs / float(total_runs)) * 100.0, 6) if total_runs > 0 else 100.0
+        details: List[Dict[str, Any]] = []
 
-    for src in grouped.columns:
-        series = grouped[src].fillna(0).astype(int)
-
-        unhealthy_mask = series > alarm_threshold  # strictly greater than 10 = unhealthy
-        unhealthy_bins_count = int(unhealthy_mask.sum())
-        unhealthy_total += unhealthy_bins_count
-
-        bins_with_events = int((series > 0).sum())
-        healthy_bins = int(total_bins - unhealthy_bins_count)
-        health_pct = round((healthy_bins / total_bins) * 100.0, 6)
-
-        # Details (only if requested)
-        details = []
-        if include_details and unhealthy_bins_count > 0:
-            # raw rows for this source (for diagnostics)
-            src_df = df.loc[df[source_col] == src, ["__ts__"]].copy()
-            src_df["__minute__"] = src_df["__ts__"].dt.floor("min")
-
-            bad_idx = grouped.index[unhealthy_mask]
-            for t0 in bad_idx:
-                t1 = _window_end(t0)
-                hits = int(series.loc[t0])
+        if include_details and unhealthy_runs > 0:
+            # Sort unhealthy by hits desc, then bin_start asc
+            for _, row in src_runs.loc[src_runs["is_unhealthy"]].sort_values(
+                ["hits", "bin_start"], ascending=[False, True]
+            ).iterrows():
+                hits = int(row["hits"])
                 over_by = hits - alarm_threshold
                 over_pct = round((over_by / alarm_threshold) * 100.0, 6) if alarm_threshold > 0 else None
-                rate_per_min = round(hits / float(window_minutes), 6) if window_minutes else None
-
-                wmask = (src_df["__ts__"] >= t0) & (src_df["__ts__"] < t1)
-                sub = src_df.loc[wmask]
-                first_event = sub["__ts__"].min() if not sub.empty else pd.NaT
-                last_event = sub["__ts__"].max() if not sub.empty else pd.NaT
-                uniq_min = int(sub["__minute__"].nunique()) if not sub.empty else 0
-
                 details.append({
-                    "source": src,
+                    "source": str(src),
                     "status": "unhealthy",
-                    "bin_start": t0.isoformat(),
-                    "bin_end": t1.isoformat(),
-                    "window_minutes": int(window_minutes),
-
+                    "bin_start": row["bin_start"].isoformat(),
+                    "bin_end": (row["bin_start"] + pd.Timedelta(minutes=10)).isoformat(),  # Fixed end
+                    "window_minutes": int(row["window_minutes"]),
                     "hits": hits,
-                    "threshold": int(alarm_threshold),
-                    "over_by": int(over_by),
+                    "threshold": alarm_threshold,
+                    "over_by": over_by,
                     "over_pct": over_pct,
-                    "rate_per_min": rate_per_min,
-
-                    "first_event_ts": None if pd.isna(first_event) else first_event.isoformat(),
-                    "last_event_ts":  None if pd.isna(last_event)  else last_event.isoformat(),
-                    "unique_event_minutes": uniq_min
+                    "rate_per_min": row["rate_per_min"],
+                    "first_event_ts": row["first_event_ts"].isoformat(),
+                    "last_event_ts": row["last_event_ts"].isoformat(),
                 })
 
         source_details[str(src)] = {
-            "total_bins": int(total_bins),
-            "bins_with_events": int(bins_with_events),
-            "healthy_bins": int(healthy_bins),
-            "unhealthy_bins": int(unhealthy_bins_count),
+            "total_bins": int(total_runs),  # Non-empty 10-min bins
+            "bins_with_events": int(total_runs),
+            "healthy_bins": int(healthy_runs),
+            "unhealthy_bins": int(unhealthy_runs),
             "health_pct": health_pct,
             "unhealthy_bin_details": details
         }
 
-    # -------------------- 6) Overall file health --------------------
-    if len(grouped.columns) > 0:
-        overall_health = sum(d["health_pct"] for d in source_details.values()) / float(len(grouped.columns))
-    else:
-        overall_health = 100.0
+    num_sources = grouped_runs["__source__"].nunique()
+    overall_health = sum(d["health_pct"] for d in source_details.values()) / float(num_sources) if num_sources > 0 else 100.0
 
     return {
         "filename": filename,
-        "num_sources": int(len(grouped.columns)),
+        "num_sources": int(num_sources),
         "health_pct": round(overall_health, 6),
         "unhealthy_count": int(unhealthy_total),
         "source_details": source_details
     }
+
+
 def compute_pvcI_overall_health(
     folder_path: str,
     config: HealthConfig = DEFAULT_CONFIG,
@@ -580,31 +534,31 @@ def compute_pvcI_overall_health_weighted(
             'message': 'No files processed'
         }
 
-    # Weighted overall: sum healthy bins / sum total bins across all processed files
+    # Weighted overall using run totals (not time bins)
     total_bins_all = 0
     total_healthy_all = 0
     for r in daily_results:
-        num_sources = int(r.get('num_sources', 0))
-        total_bins_file = num_sources * config.bins_per_day
-        unhealthy_count = int(r.get('unhealthy_count', 0))
-        healthy_bins_file = max(total_bins_file - unhealthy_count, 0)
+        source_details = r.get('source_details') or {}
+        total_bins_file = 0
+        healthy_bins_file = 0
+        for sd in source_details.values():
+            tb = int(sd.get('total_bins', 0) or 0)
+            hb = int(sd.get('healthy_bins', 0) or 0)
+            total_bins_file += tb
+            healthy_bins_file += hb
         total_bins_all += total_bins_file
         total_healthy_all += healthy_bins_file
 
     overall_health_weighted = (total_healthy_all / total_bins_all * 100) if total_bins_all > 0 else 100
 
-    # Aggregate source health across all files (same as unweighted version for schema parity)
-    all_source_health = {}
+    # Aggregate per-source health across files from source_details
+    all_source_health: Dict[str, List[float]] = {}
     for result in daily_results:
-        for source, health in result.get('source_health', {}).items():
-            if source not in all_source_health:
-                all_source_health[source] = []
-            all_source_health[source].append(health)
+        for src, sd in (result.get('source_details') or {}).items():
+            hp = float(sd.get('health_pct', 100.0) or 100.0)
+            all_source_health.setdefault(src, []).append(hp)
 
-    avg_source_health = {
-        source: sum(health) / len(health)
-        for source, health in all_source_health.items()
-    }
+    avg_source_health = { src: (sum(vals) / len(vals)) for src, vals in all_source_health.items() }
 
     return {
         'total_files': len(files),
