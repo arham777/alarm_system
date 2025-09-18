@@ -6,6 +6,7 @@ from pvcI_health_monitor import (
     compute_pvcI_overall_health_weighted,
     HealthConfig,
 )
+from pvcI_health_monitor import compute_pvcI_unhealthy_sources
 from fastapi.responses import ORJSONResponse
 from config import PVCI_FOLDER
 import os
@@ -80,6 +81,27 @@ def get_pvcI_overall_health_weighted_endpoint(
     try:
         config = HealthConfig(bin_size=bin_size, alarm_threshold=alarm_threshold)
         return compute_pvcI_overall_health_weighted(PVCI_FOLDER, config, max_workers, per_file_timeout)
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/pvcI-health/unhealthy-sources", response_class=ORJSONResponse)
+def get_pvcI_unhealthy_sources(
+    start_time: str | None = None,
+    end_time: str | None = None,
+    bin_size: str = "10T",
+    alarm_threshold: int = 10,
+    max_workers: int = 4,
+    per_file_timeout: int | None = 30,
+):
+    """
+    Get detailed unhealthy source bins with full metadata for plotting.
+    """
+    try:
+        config = HealthConfig(bin_size=bin_size, alarm_threshold=alarm_threshold)
+        result = compute_pvcI_unhealthy_sources(
+            PVCI_FOLDER, config, max_workers, per_file_timeout, start_time, end_time
+        )
+        return result
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 

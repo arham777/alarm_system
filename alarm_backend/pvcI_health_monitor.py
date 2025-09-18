@@ -7,6 +7,7 @@ from functools import lru_cache
 import logging
 from concurrent.futures import ThreadPoolExecutor, as_completed, wait
 from config import PVCI_FOLDER
+from pvcI_files import read_pvc_file, list_pvc_files
 
 # Configure logging
 logging.basicConfig(
@@ -617,3 +618,206 @@ def compute_pvcI_overall_health_weighted(
         'processed_files': len(daily_results),
         'failed_files': len(files) - len(daily_results)
     }
+
+
+
+def compute_pvcI_unhealthy_sources(
+    folder_path: str,
+    config: "HealthConfig",
+    max_workers: int = 4,
+    per_file_timeout: float = 20.0,
+    start_time: Optional[str] = None,
+    end_time: Optional[str] = None,
+) -> Dict[str, Any]:
+    """
+    Returns only the unhealthy bins with full metadata for plotting.
+    Uses compute_pvcI_overall_health() to get unhealthy bins, then reads CSV files for metadata.
+    """
+    result = compute_pvcI_overall_health(folder_path, config, max_workers, per_file_timeout)
+    per_source = result.get("per_source", {})
+
+    start_dt = datetime.fromisoformat(start_time) if start_time else None
+    end_dt = datetime.fromisoformat(end_time) if end_time else None
+
+    unhealthy_records: List[Dict[str, Any]] = []
+
+    for source, details in per_source.items():
+        for bin_detail in details.get("unhealthy_bin_details", []):
+            bin_start_str = bin_detail["bin_start"]
+            bin_start = datetime.fromisoformat(bin_start_str.replace("Z", "+00:00"))
+
+            # Filter by time range
+            if start_dt and bin_start < start_dt:
+                continue
+            if end_dt and bin_start > end_dt:
+                continue
+
+            # Extract metadata by reading the CSV file directly
+            file_path = os.path.join(folder_path, bin_detail["filename"])
+            metadata = _extract_metadata_from_csv(
+                file_path, source, bin_detail["bin_start"], bin_detail["bin_end"]
+            )
+
+            unhealthy_records.append({
+                "event_time": bin_detail["bin_start"],
+                "bin_end": bin_detail["bin_end"],
+                "source": source,
+                "hits": bin_detail["hits"],
+                "threshold": bin_detail["threshold"],
+                "over_by": bin_detail["over_by"],
+                "rate_per_min": bin_detail["rate_per_min"],
+                **metadata
+            })
+
+    return {"count": len(unhealthy_records), "records": unhealthy_records}
+
+
+def _default_metadata() -> Dict[str, Any]:
+    """Return default metadata when extraction fails"""
+    return {
+        "location_tag": "Not Provided",
+        "condition": "Not Provided",
+        "action": "Not Provided",
+        "priority": "Not Provided",
+        "description": "Not Provided",
+        "value": None,
+        "units": None,
+    }
+
+
+def _extract_metadata_from_csv(file_path: str, source: str, bin_start: str, bin_end: str) -> Dict[str, Any]:
+    """
+    Extracts metadata by reading the CSV file directly and filtering by source and time range.
+    Uses the same CSV reading logic as other functions in the codebase.
+    """
+    try:
+        logger.info(f"Extracting metadata for source {source} from {file_path} between {bin_start} and {bin_end}")
+        
+        # Use the same CSV reading approach as read_pvc_file
+        expected_columns = [
+            "Event Time", "Location Tag", "Source", "Condition", 
+            "Action", "Priority", "Description", "Value", "Units"
+        ]
+        
+        # Try reading with comma separator first
+        try:
+            df = pd.read_csv(
+                file_path, 
+                sep=',',
+                encoding='utf-8', 
+                engine='python',
+                skipinitialspace=True,
+                quotechar='"',
+                on_bad_lines='skip',
+                dtype=str,
+                keep_default_na=False,
+                na_filter=False,
+                skiprows=8  # Skip first 8 rows which contain metadata
+            )
+        except Exception:
+            # Fallback to tab separator
+            df = pd.read_csv(
+                file_path, 
+                sep='\t',
+                encoding='utf-8', 
+                engine='python',
+                skipinitialspace=True,
+                quotechar='"',
+                on_bad_lines='skip',
+                dtype=str,
+                keep_default_na=False,
+                na_filter=False,
+                skiprows=8
+            )
+        
+        logger.info(f"Read CSV with columns: {list(df.columns)}")
+        
+        # Clean up column names
+        df.columns = df.columns.str.strip()
+        
+        # Ensure we have all required columns
+        for col in expected_columns:
+            if col not in df.columns:
+                df[col] = ""
+        
+        # Select only the columns we want
+        df = df[expected_columns]
+        
+        # Replace any remaining whitespace-only cells with empty string
+        df = df.replace(r'^\s*$', "", regex=True)
+        
+        logger.info(f"Total rows before source filter: {len(df)}")
+        
+        # Filter rows by source
+        df = df[df["Source"].str.strip() == source]
+        logger.info(f"Rows after source filter for {source}: {len(df)}")
+        
+        if df.empty:
+            logger.warning(f"No records found for source {source}")
+            return _default_metadata()
+
+        # Convert Event Time to datetime - handle multiple formats
+        df["Event Time"] = pd.to_datetime(df["Event Time"], errors="coerce", infer_datetime_format=True)
+        df = df.dropna(subset=["Event Time"])
+        
+        if df.empty:
+            logger.warning(f"No valid timestamps found for source {source}")
+            return _default_metadata()
+
+        logger.info(f"Rows after datetime conversion: {len(df)}")
+        logger.info(f"Sample timestamps: {df['Event Time'].head().tolist()}")
+
+        # Convert bin times to datetime with timezone handling
+        # The bin times are in UTC, but CSV times might be in local timezone
+        bin_start_dt = pd.to_datetime(bin_start).tz_convert(None) if pd.to_datetime(bin_start).tz else pd.to_datetime(bin_start)
+        bin_end_dt = pd.to_datetime(bin_end).tz_convert(None) if pd.to_datetime(bin_end).tz else pd.to_datetime(bin_end)
+        
+        # Make CSV timestamps timezone-naive for comparison
+        df["Event Time"] = df["Event Time"].dt.tz_localize(None) if df["Event Time"].dt.tz else df["Event Time"]
+        
+        logger.info(f"Filtering between {bin_start_dt} and {bin_end_dt}")
+        
+        # Use a wider time window to account for timezone differences
+        # Expand the search window by 12 hours on each side
+        expanded_start = bin_start_dt - pd.Timedelta(hours=12)
+        expanded_end = bin_end_dt + pd.Timedelta(hours=12)
+        
+        mask = (df["Event Time"] >= expanded_start) & (df["Event Time"] <= expanded_end)
+        df_filtered = df[mask]
+        
+        logger.info(f"Rows after time filter (expanded window): {len(df_filtered)}")
+
+        # If no records in expanded window, try the original window
+        if df_filtered.empty:
+            mask = (df["Event Time"] >= bin_start_dt) & (df["Event Time"] <= bin_end_dt)
+            df_filtered = df[mask]
+            logger.info(f"Rows after time filter (exact window): {len(df_filtered)}")
+
+        # If still no records, just take the first record for this source
+        if df_filtered.empty:
+            logger.warning(f"No records in time window, using first available record for source {source}")
+            df_filtered = df.head(1)
+
+        if df_filtered.empty:
+            logger.warning(f"No records found at all for source {source}")
+            return _default_metadata()
+
+        # Get the first row for metadata
+        first_row = df_filtered.iloc[0]
+        
+        result = {
+            "location_tag": str(first_row.get("Location Tag", "")).strip() or "Not Provided",
+            "condition": str(first_row.get("Condition", "")).strip() or "Not Provided",
+            "action": str(first_row.get("Action", "")).strip() or "Not Provided",
+            "priority": str(first_row.get("Priority", "")).strip() or "Not Provided",
+            "description": str(first_row.get("Description", "")).strip() or "Not Provided",
+            "value": first_row.get("Value", None) if str(first_row.get("Value", "")).strip() else None,
+            "units": first_row.get("Units", None) if str(first_row.get("Units", "")).strip() else None,
+        }
+        
+        logger.info(f"Extracted metadata: {result}")
+        return result
+        
+    except Exception as e:
+        logger.error(f"Metadata extraction failed for {file_path}: {e}")
+        return _default_metadata()
