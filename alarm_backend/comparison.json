@@ -1,0 +1,745 @@
+{
+    "total_old_events": 1070,
+    "total_new_events": 0,
+    "diff_events": -1070,
+    "per_source_comparison": {
+        "TIC1511": {
+            "old_events": 13,
+            "old_total_count": 262,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -13
+        },
+        "NAOHFEED": {
+            "old_events": 1,
+            "old_total_count": 16,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -1
+        },
+        "PI1601": {
+            "old_events": 2,
+            "old_total_count": 27,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -2
+        },
+        "LI1404": {
+            "old_events": 1,
+            "old_total_count": 14,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -1
+        },
+        "AI8520": {
+            "old_events": 1,
+            "old_total_count": 13,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -1
+        },
+        "XA1001": {
+            "old_events": 1,
+            "old_total_count": 12,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -1
+        },
+        "OP_POLYINIT_A": {
+            "old_events": 19,
+            "old_total_count": 190,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -19
+        },
+        "FIC1305": {
+            "old_events": 1,
+            "old_total_count": 17,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -1
+        },
+        "FT1514": {
+            "old_events": 1,
+            "old_total_count": 138,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -1
+        },
+        "FIC1316B": {
+            "old_events": 3,
+            "old_total_count": 34,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -3
+        },
+        "MIC1506A": {
+            "old_events": 2,
+            "old_total_count": 33,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -2
+        },
+        "EVENT_SCM2A": {
+            "old_events": 81,
+            "old_total_count": 2383,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -81
+        },
+        "FIC1516": {
+            "old_events": 1,
+            "old_total_count": 16,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -1
+        },
+        "OP_RECINIT": {
+            "old_events": 37,
+            "old_total_count": 370,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -37
+        },
+        "FIC1404": {
+            "old_events": 3,
+            "old_total_count": 34,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -3
+        },
+        "RDYINIT_CM": {
+            "old_events": 1,
+            "old_total_count": 10,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -1
+        },
+        "FIC1501": {
+            "old_events": 6,
+            "old_total_count": 233,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -6
+        },
+        "XSV1331A": {
+            "old_events": 2,
+            "old_total_count": 31,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -2
+        },
+        "UP_POLY_A": {
+            "old_events": 20,
+            "old_total_count": 341,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -20
+        },
+        "FIC1316A": {
+            "old_events": 1,
+            "old_total_count": 10,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -1
+        },
+        "OP_SUPER_A": {
+            "old_events": 62,
+            "old_total_count": 1400,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -62
+        },
+        "EVENT_SCM2": {
+            "old_events": 25,
+            "old_total_count": 1359,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -25
+        },
+        "AIC1502": {
+            "old_events": 6,
+            "old_total_count": 99,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -6
+        },
+        "TIC1513": {
+            "old_events": 1,
+            "old_total_count": 56,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -1
+        },
+        "EVENT_SCM1A": {
+            "old_events": 92,
+            "old_total_count": 3534,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -92
+        },
+        "HC1502": {
+            "old_events": 12,
+            "old_total_count": 192,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -12
+        },
+        "EI1504A2": {
+            "old_events": 6,
+            "old_total_count": 110,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -6
+        },
+        "EVENT_SCM1B": {
+            "old_events": 81,
+            "old_total_count": 1546,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -81
+        },
+        "FIC1801": {
+            "old_events": 1,
+            "old_total_count": 17,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -1
+        },
+        "EI1104": {
+            "old_events": 4,
+            "old_total_count": 124,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -4
+        },
+        "CM_RECIPE": {
+            "old_events": 1,
+            "old_total_count": 14,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -1
+        },
+        "FIC1506A": {
+            "old_events": 6,
+            "old_total_count": 112,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -6
+        },
+        "File Replication": {
+            "old_events": 1,
+            "old_total_count": 13,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -1
+        },
+        "FIC8841": {
+            "old_events": 1,
+            "old_total_count": 20,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -1
+        },
+        "FIC1407": {
+            "old_events": 2,
+            "old_total_count": 47,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -2
+        },
+        "PIC1305": {
+            "old_events": 8,
+            "old_total_count": 148,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -8
+        },
+        "FI1514BM": {
+            "old_events": 1,
+            "old_total_count": 147,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -1
+        },
+        "AI_PH10": {
+            "old_events": 1,
+            "old_total_count": 14,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -1
+        },
+        "FIC1506B": {
+            "old_events": 4,
+            "old_total_count": 76,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -4
+        },
+        "PR_POLY": {
+            "old_events": 9,
+            "old_total_count": 143,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -9
+        },
+        "ALMMNG4": {
+            "old_events": 3,
+            "old_total_count": 76,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -3
+        },
+        "FQC1504": {
+            "old_events": 6,
+            "old_total_count": 179,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -6
+        },
+        "PI1513": {
+            "old_events": 1,
+            "old_total_count": 11,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -1
+        },
+        "LIC1402": {
+            "old_events": 7,
+            "old_total_count": 100,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -7
+        },
+        "RDYINIT": {
+            "old_events": 1,
+            "old_total_count": 10,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -1
+        },
+        "HC1301": {
+            "old_events": 1,
+            "old_total_count": 16,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -1
+        },
+        "AAH10027": {
+            "old_events": 1,
+            "old_total_count": 10,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -1
+        },
+        "EI1504B2": {
+            "old_events": 4,
+            "old_total_count": 58,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -4
+        },
+        "FI1513": {
+            "old_events": 1,
+            "old_total_count": 10,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -1
+        },
+        "OP_TRANSCHK": {
+            "old_events": 37,
+            "old_total_count": 370,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -37
+        },
+        "PIC1511": {
+            "old_events": 2,
+            "old_total_count": 26,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -2
+        },
+        "AI8102": {
+            "old_events": 3,
+            "old_total_count": 33,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -3
+        },
+        "AIOR-704": {
+            "old_events": 5,
+            "old_total_count": 53,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -5
+        },
+        "PI8110": {
+            "old_events": 15,
+            "old_total_count": 335,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -15
+        },
+        "EVENT_SCM2B": {
+            "old_events": 85,
+            "old_total_count": 2266,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -85
+        },
+        "UP_POLY_B": {
+            "old_events": 19,
+            "old_total_count": 322,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -19
+        },
+        "LIC1401": {
+            "old_events": 2,
+            "old_total_count": 20,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -2
+        },
+        "OP_SUPER_A2": {
+            "old_events": 19,
+            "old_total_count": 266,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -19
+        },
+        "FI1406": {
+            "old_events": 2,
+            "old_total_count": 25,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -2
+        },
+        "LIC8109": {
+            "old_events": 3,
+            "old_total_count": 39,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -3
+        },
+        "REPORT": {
+            "old_events": 3,
+            "old_total_count": 210,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -3
+        },
+        "OP_NASH1": {
+            "old_events": 77,
+            "old_total_count": 4680,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -77
+        },
+        "LI1107": {
+            "old_events": 8,
+            "old_total_count": 866,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -8
+        },
+        "OP_POLYINIT_B": {
+            "old_events": 19,
+            "old_total_count": 190,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -19
+        },
+        "LIC1305": {
+            "old_events": 1,
+            "old_total_count": 12,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -1
+        },
+        "TIC1301A": {
+            "old_events": 2,
+            "old_total_count": 33,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -2
+        },
+        "EVENT_SCM1": {
+            "old_events": 42,
+            "old_total_count": 2055,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -42
+        },
+        "FIC1512": {
+            "old_events": 1,
+            "old_total_count": 13,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -1
+        },
+        "OP_SUPER_B": {
+            "old_events": 58,
+            "old_total_count": 1268,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -58
+        },
+        "FIC1409": {
+            "old_events": 1,
+            "old_total_count": 10,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -1
+        },
+        "FI1514": {
+            "old_events": 1,
+            "old_total_count": 140,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -1
+        },
+        "XSV1359B": {
+            "old_events": 1,
+            "old_total_count": 13,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -1
+        },
+        "UP_READY": {
+            "old_events": 2,
+            "old_total_count": 27,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -2
+        },
+        "TIC1301B": {
+            "old_events": 3,
+            "old_total_count": 34,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -3
+        },
+        "PI1512": {
+            "old_events": 1,
+            "old_total_count": 10,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -1
+        },
+        "HTR8801": {
+            "old_events": 2,
+            "old_total_count": 23,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -2
+        },
+        "PDI1523": {
+            "old_events": 1,
+            "old_total_count": 53,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -1
+        },
+        "OP_SUPER_B2": {
+            "old_events": 19,
+            "old_total_count": 266,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -19
+        },
+        "CONSOLE  2": {
+            "old_events": 1,
+            "old_total_count": 13,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -1
+        },
+        "$ACTIVITY_330413F2352AB609": {
+            "old_events": 78,
+            "old_total_count": 4773,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -78
+        },
+        "OP_RDYINIT": {
+            "old_events": 2,
+            "old_total_count": 27,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -2
+        },
+        "CI8102": {
+            "old_events": 9,
+            "old_total_count": 473,
+            "new_events": 0,
+            "new_total_alarms": 0,
+            "new_flood_min": 0,
+            "health_pct": 100.0,
+            "diff_events": -9
+        }
+    }
+}

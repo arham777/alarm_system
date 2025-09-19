@@ -22,7 +22,7 @@ class HealthConfig:
     """Configuration class for health monitoring parameters"""
     def __init__(
         self,
-        bin_size: str = '10T',
+        bin_size: str = '10min',
         alarm_threshold: int = 10,
         bins_per_day: int = 144,
         skip_rows: int = 8,
@@ -124,7 +124,7 @@ import pandas as pd
 import math
 from typing import Dict, Any, List
 
-def group_events_by_source_with_timegap(df, bin_size: str = '10T', max_gap_minutes: int = None):
+def group_events_by_source_with_timegap(df, bin_size: str = '10min', max_gap_minutes: int = None):
     """
     Groups events by source into FIXED 10-min bins (non-overlapping).
     - Bins via dt.floor(bin_size) for strict "in 10 minutes" checks.
@@ -162,6 +162,84 @@ def group_events_by_source_with_timegap(df, bin_size: str = '10T', max_gap_minut
     grouped_runs = grouped_runs[grouped_runs['hits'] >= 1]
 
     return grouped_runs
+
+
+def detect_flood_events_for_source(
+    src_df: pd.DataFrame,
+    threshold: int = 10,
+    time_window_minutes: int = 10,
+) -> List[Dict[str, Any]]:
+    """
+    Detect dynamic sliding-window flood events for a single source using a deque window.
+    - src_df must contain a timezone-aware timestamp column '__ts__' and be sorted by time.
+    - Returns merged flood clusters with accurate duration and rate.
+    """
+    from collections import deque
+
+    if src_df.empty:
+        return []
+
+    # Ensure sorted
+    s = src_df.sort_values("__ts__").reset_index(drop=True)
+
+    window = deque()
+    candidates: List[Dict[str, Any]] = []
+    max_span = pd.Timedelta(minutes=time_window_minutes)
+
+    for ts in s["__ts__"].tolist():
+        window.append(ts)
+        while window and (window[-1] - window[0]) > max_span:
+            window.popleft()
+        if len(window) >= int(threshold):
+            candidates.append({
+                "start": window[0],
+                "end": window[-1],
+                "count": len(window),
+                # Track exact 10-min window
+                "peak_start": window[0],
+                "peak_end": window[-1],
+            })
+
+    if not candidates:
+        return []
+
+    # Merge overlapping/adjacent candidates to maximal clusters
+    epsilon = pd.Timedelta(seconds=1)
+    merged: List[Dict[str, Any]] = []
+    current = dict(candidates[0])
+    current.setdefault("peak_start", current["start"]) 
+    current.setdefault("peak_end", current["end"]) 
+    for nxt in candidates[1:]:
+        if nxt["start"] <= current["end"] + epsilon:
+            current["end"] = max(current["end"], nxt["end"])
+            # If next has a higher count, adopt its peak window
+            if int(nxt["count"]) > int(current.get("count", 0)):
+                current["count"] = int(nxt["count"])
+                current["peak_start"] = nxt.get("peak_start", nxt["start"]) 
+                current["peak_end"] = nxt.get("peak_end", nxt["end"]) 
+        else:
+            merged.append(current)
+            current = dict(nxt)
+            current.setdefault("peak_start", current["start"]) 
+            current.setdefault("peak_end", current["end"]) 
+    merged.append(current)
+
+    # Compute duration and rate for each merged cluster
+    events: List[Dict[str, Any]] = []
+    for m in merged:
+        duration_min = (m["end"] - m["start"]).total_seconds() / 60.0
+        rate_per_min = (m.get("count", 0) / duration_min) if duration_min > 0 else 0.0
+        events.append({
+            "start": m["start"],
+            "end": m["end"],
+            "count": int(m.get("count", 0)),
+            "duration_min": float(round(duration_min, 6)),
+            "rate_per_min": float(round(rate_per_min, 6)),
+            "peak_start": m.get("peak_start", m["start"]),
+            "peak_end": m.get("peak_end", m["start"] + pd.Timedelta(minutes=time_window_minutes)),
+        })
+
+    return events
 
 
 def compute_pvcI_file_health(
@@ -205,18 +283,44 @@ def compute_pvcI_file_health(
             "source_details": {}
         }
 
-    # --- FIXED bin grouping (replaces dynamic gap logic) ---
+    # --- FIXED bin grouping for rollups ---
     grouped_runs = group_events_by_source_with_timegap(
-        df, bin_size=config.bin_size  # Now uses '10T'
+        df, bin_size=config.bin_size
     )
 
     alarm_threshold = int(getattr(config, "alarm_threshold", 10) or 10)
+    bin_minutes = int(pd.Timedelta(config.bin_size).total_seconds() // 60)
+
+    # --- Dynamic sliding-window floods per source ---
+    source_events: Dict[str, List[Dict[str, Any]]] = {}
+    for src, s_df in df.groupby("__source__"):
+        source_events[src] = detect_flood_events_for_source(
+            s_df[["__ts__"]], threshold=alarm_threshold, time_window_minutes=bin_minutes
+        )
+
+    # Initialize unhealthy flags from fixed threshold, then OR with dynamic overlaps
     grouped_runs["is_unhealthy"] = grouped_runs["hits"] >= alarm_threshold
+    if not grouped_runs.empty:
+        for src, src_runs in grouped_runs.groupby("__source__"):
+            events = source_events.get(src) or []
+            if not events:
+                continue
+            idx = src_runs.index
+            bin_start = src_runs["bin_start"]
+            bin_end = bin_start + pd.Timedelta(minutes=bin_minutes)
+            overlapped = pd.Series(False, index=idx)
+            for ev in events:
+                ev_start = ev["start"]
+                ev_end = ev["end"]
+                mask = (bin_start < ev_end) & (bin_end > ev_start)
+                overlapped = overlapped | mask
+            grouped_runs.loc[idx, "is_unhealthy"] = grouped_runs.loc[idx, "is_unhealthy"] | overlapped
 
     # --- Build source_details ---
     source_details: Dict[str, Any] = {}
     unhealthy_total = 0
     for src, src_runs in grouped_runs.groupby("__source__"):
+        # Work on updated per-source view
         total_runs = len(src_runs)
         unhealthy_runs = int(src_runs["is_unhealthy"].sum())
         healthy_runs = total_runs - unhealthy_runs
@@ -233,20 +337,58 @@ def compute_pvcI_file_health(
                 hits = int(row["hits"])
                 over_by = hits - alarm_threshold
                 over_pct = round((over_by / alarm_threshold) * 100.0, 6) if alarm_threshold > 0 else None
-                details.append({
+
+                # Attach best overlapping dynamic event info, if any
+                bin_start_ts = row["bin_start"]
+                bin_end_ts = bin_start_ts + pd.Timedelta(minutes=bin_minutes)
+                best_ev = None
+                for ev in (source_events.get(src) or []):
+                    if (bin_start_ts < ev["end"]) and (bin_end_ts > ev["start"]):
+                        if (best_ev is None) or (ev["count"] > best_ev["count"]) or (
+                            ev["count"] == best_ev["count"] and ev["rate_per_min"] > best_ev["rate_per_min"]
+                        ):
+                            best_ev = ev
+
+                detail = {
                     "source": str(src),
                     "status": "unhealthy",
-                    "bin_start": row["bin_start"].isoformat(),
-                    "bin_end": (row["bin_start"] + pd.Timedelta(minutes=10)).isoformat(),  # Fixed end
+                    "bin_start": bin_start_ts.isoformat(),
+                    "bin_end": bin_end_ts.isoformat(),  # Fixed end
                     "window_minutes": int(row["window_minutes"]),
                     "hits": hits,
                     "threshold": alarm_threshold,
                     "over_by": over_by,
                     "over_pct": over_pct,
                     "rate_per_min": row["rate_per_min"],
-                    "first_event_ts": row["first_event_ts"].isoformat(),
-                    "last_event_ts": row["last_event_ts"].isoformat(),
-                })
+                }
+
+                if best_ev is not None:
+                    detail.update({
+                        "duration_min": round(float(best_ev["duration_min"]), 6),
+                        "flood_count": int(best_ev["count"]),
+                        "event_rate_per_min": round(float(best_ev["rate_per_min"]), 6),
+                        # New: Exact 10-minute peak window producing flood_count
+                        "peak_window_start": best_ev.get("peak_start").isoformat() if best_ev.get("peak_start") is not None else None,
+                        "peak_window_end": best_ev.get("peak_end").isoformat() if best_ev.get("peak_end") is not None else None,
+                        "peak_rate_per_min": round((int(best_ev["count"]) / 10.0), 6),
+                    })
+
+                # Enrich with static CSV metadata using per-file index (fast path)
+                try:
+                    metadata = _get_metadata_fast(file_path, str(src))
+                    detail.update({
+                        "location_tag": metadata.get("location_tag"),
+                        "condition": metadata.get("condition"),
+                        "action": metadata.get("action"),
+                        "priority": metadata.get("priority"),
+                        "description": metadata.get("description"),
+                        "setpoint_value": metadata.get("value"),
+                        "units": metadata.get("units"),
+                    })
+                except Exception:
+                    pass
+
+                details.append(detail)
 
         source_details[str(src)] = {
             "total_bins": int(total_runs),  # Non-empty 10-min bins
@@ -320,16 +462,25 @@ def compute_pvcI_overall_health(
                         include_details
                     ) for p in file_paths
                 ]
-                done, not_done = wait(futures, timeout=per_file_timeout)
-                for fut in done:
-                    try:
-                        file_results.append(fut.result())
-                    except Exception as e:
-                        errors.append(str(e))
-                for fut in not_done:
-                    fut.cancel()
-                if not_done:
-                    errors.append(f"Timed out after {per_file_timeout:.1f}s; skipped {len(not_done)} file(s).")
+                if per_file_timeout is None:
+                    # No global timeout: collect all results as they finish
+                    for fut in as_completed(futures):
+                        try:
+                            file_results.append(fut.result())
+                        except Exception as e:
+                            errors.append(str(e))
+                else:
+                    # Maintain behavior with a global wait, but only skip those not done
+                    done, not_done = wait(futures, timeout=per_file_timeout)
+                    for fut in done:
+                        try:
+                            file_results.append(fut.result())
+                        except Exception as e:
+                            errors.append(str(e))
+                    for fut in not_done:
+                        fut.cancel()
+                    if not_done:
+                        errors.append(f"Timed out after {per_file_timeout:.1f}s; skipped {len(not_done)} file(s).")
         else:
             for p in file_paths:
                 try:
@@ -608,8 +759,11 @@ def compute_pvcI_unhealthy_sources(
 
             # Extract metadata by reading the CSV file directly
             file_path = os.path.join(folder_path, bin_detail["filename"])
+            # Prefer dynamic event window if available, else fall back to bin window
+            meta_start = bin_detail.get("event_start", bin_detail["bin_start"])  # ISO 8601
+            meta_end = bin_detail.get("event_end", bin_detail["bin_end"])      # ISO 8601
             metadata = _extract_metadata_from_csv(
-                file_path, source, bin_detail["bin_start"], bin_detail["bin_end"]
+                file_path, source, meta_start, meta_end
             )
 
             unhealthy_records.append({
@@ -620,6 +774,11 @@ def compute_pvcI_unhealthy_sources(
                 "threshold": bin_detail["threshold"],
                 "over_by": bin_detail["over_by"],
                 "rate_per_min": bin_detail["rate_per_min"],
+                "event_start": bin_detail.get("event_start"),
+                "event_end": bin_detail.get("event_end"),
+                "duration_min": bin_detail.get("duration_min"),
+                "flood_count": bin_detail.get("flood_count"),
+                "event_rate_per_min": bin_detail.get("event_rate_per_min"),
                 **metadata
             })
 
@@ -775,3 +934,77 @@ def _extract_metadata_from_csv(file_path: str, source: str, bin_start: str, bin_
     except Exception as e:
         logger.error(f"Metadata extraction failed for {file_path}: {e}")
         return _default_metadata()
+
+
+# Per-file metadata index to avoid re-reading CSVs for every unhealthy bin
+@lru_cache(maxsize=128)
+def _build_metadata_index(file_path: str) -> Dict[str, Dict[str, Any]]:
+    """Build a mapping of Source -> static metadata from one CSV read."""
+    try:
+        expected_columns = [
+            "Event Time", "Location Tag", "Source", "Condition",
+            "Action", "Priority", "Description", "Value", "Units"
+        ]
+
+        # Prefer comma, fallback to tab
+        try:
+            df = pd.read_csv(
+                file_path,
+                sep=',',
+                encoding='utf-8',
+                engine='python',
+                skipinitialspace=True,
+                quotechar='"',
+                on_bad_lines='skip',
+                dtype=str,
+                keep_default_na=False,
+                na_filter=False,
+                skiprows=8
+            )
+        except Exception:
+            df = pd.read_csv(
+                file_path,
+                sep='\t',
+                encoding='utf-8',
+                engine='python',
+                skipinitialspace=True,
+                quotechar='"',
+                on_bad_lines='skip',
+                dtype=str,
+                keep_default_na=False,
+                na_filter=False,
+                skiprows=8
+            )
+
+        df.columns = df.columns.str.strip()
+        for col in expected_columns:
+            if col not in df.columns:
+                df[col] = ""
+
+        df = df[expected_columns]
+        df = df.replace(r'^\s*$', "", regex=True)
+
+        first_rows = df.drop_duplicates(subset=["Source"], keep="first")
+        index: Dict[str, Dict[str, Any]] = {}
+        for _, row in first_rows.iterrows():
+            src = str(row.get("Source", "")).strip()
+            if not src:
+                continue
+            index[src] = {
+                "location_tag": str(row.get("Location Tag", "")).strip() or "Not Provided",
+                "condition": str(row.get("Condition", "")).strip() or "Not Provided",
+                "action": str(row.get("Action", "")).strip() or "Not Provided",
+                "priority": str(row.get("Priority", "")).strip() or "Not Provided",
+                "description": str(row.get("Description", "")).strip() or "Not Provided",
+                "value": (row.get("Value", None) if str(row.get("Value", "")).strip() else None),
+                "units": (row.get("Units", None) if str(row.get("Units", "")).strip() else None),
+            }
+
+        return index
+    except Exception:
+        return {}
+
+
+def _get_metadata_fast(file_path: str, source: str) -> Dict[str, Any]:
+    index = _build_metadata_index(file_path)
+    return index.get(source, _default_metadata())

@@ -127,8 +127,8 @@ def get_all_pvc_files_data():
 def get_pvcI_overall_health(
     bin_size: str = "10T",
     alarm_threshold: int = 10,
-    max_workers: int = 8,  # Increased workers for better parallelization
-    per_file_timeout: int | None = 120,  # Increased timeout to 2 minutes
+    max_workers: int = 12,  # Increased workers for better parallelization
+    per_file_timeout: int | None = 1800,  # Increased timeout to 2 minutes
     include_daily: bool = False,   # new: avoid huge payloads by default
     offset: int = 0,               # new: paginate daily_results
     limit: int = 20,

@@ -1,0 +1,689 @@
+2025-09-19 12:27:47,990 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\01feb.csv with separator ','
+2025-09-19 12:27:47,990 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\01March.csv with separator ','
+2025-09-19 12:27:47,990 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\02feb.csv with separator ','
+2025-09-19 12:27:47,990 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\02March.csv with separator ','
+2025-09-19 12:27:48,020 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\01March.csv in chunks
+2025-09-19 12:27:48,020 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\02March.csv in chunks
+2025-09-19 12:27:48,027 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\01feb.csv in chunks
+2025-09-19 12:27:48,027 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\02feb.csv in chunks
+2025-09-19 12:27:48,280 - flood_health - INFO - Read 3496 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\02feb.csv
+2025-09-19 12:27:48,296 - flood_health - INFO - Read 5384 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\02March.csv
+2025-09-19 12:27:48,296 - flood_health - INFO - Read 8746 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\01March.csv
+2025-09-19 12:27:48,304 - flood_health - INFO - Read 5034 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\01feb.csv
+2025-09-19 12:27:56,669 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\03feb.csv with separator ','
+2025-09-19 12:27:56,850 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\03feb.csv in chunks
+2025-09-19 12:27:57,475 - flood_health - INFO - Read 7334 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\03feb.csv
+2025-09-19 12:28:00,494 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\03March.csv with separator ','
+2025-09-19 12:28:00,707 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\03March.csv in chunks
+2025-09-19 12:28:01,085 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\04feb.csv with separator ','
+2025-09-19 12:28:01,192 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\04feb.csv in chunks
+2025-09-19 12:28:01,664 - flood_health - INFO - Read 14363 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\03March.csv
+2025-09-19 12:28:02,066 - flood_health - INFO - Read 13887 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\04feb.csv
+2025-09-19 12:28:04,628 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\04jan.csv with separator ','
+2025-09-19 12:28:04,753 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\04jan.csv in chunks
+2025-09-19 12:28:05,827 - flood_health - INFO - Read 15643 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\04jan.csv
+2025-09-19 12:28:14,408 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\04March.csv with separator ','
+2025-09-19 12:28:14,547 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\04March.csv in chunks
+2025-09-19 12:28:15,533 - flood_health - INFO - Read 14103 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\04March.csv
+2025-09-19 12:28:26,254 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\05feb.csv with separator ','
+2025-09-19 12:28:26,345 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\05feb.csv in chunks
+2025-09-19 12:28:26,877 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\05jan.csv with separator ','
+2025-09-19 12:28:27,063 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\05jan.csv in chunks
+2025-09-19 12:28:27,134 - flood_health - INFO - Read 13308 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\05feb.csv
+2025-09-19 12:28:27,628 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\05March.csv with separator ','
+2025-09-19 12:28:27,744 - flood_health - INFO - Read 13600 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\05jan.csv
+2025-09-19 12:28:27,761 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\05March.csv in chunks
+2025-09-19 12:28:28,960 - flood_health - INFO - Read 14297 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\05March.csv
+2025-09-19 12:28:34,173 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\06feb.csv with separator ','
+2025-09-19 12:28:34,280 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\06feb.csv in chunks
+2025-09-19 12:28:35,600 - flood_health - INFO - Read 13816 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\06feb.csv
+2025-09-19 12:28:46,853 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\06March.csv with separator ','
+2025-09-19 12:28:47,011 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\06March.csv in chunks
+2025-09-19 12:28:47,792 - flood_health - INFO - Read 11300 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\06March.csv
+2025-09-19 12:28:48,120 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\07feb.csv with separator ','
+2025-09-19 12:28:48,299 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\07feb.csv in chunks
+2025-09-19 12:28:49,480 - flood_health - INFO - Read 11996 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\07feb.csv
+2025-09-19 12:28:49,994 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\07March.csv with separator ','
+2025-09-19 12:28:50,219 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\07March.csv in chunks
+2025-09-19 12:28:51,650 - flood_health - INFO - Read 12510 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\07March.csv
+2025-09-19 12:28:58,536 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\08feb.csv with separator ','
+2025-09-19 12:28:58,872 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\08feb.csv in chunks
+2025-09-19 12:29:00,210 - flood_health - INFO - Read 11872 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\08feb.csv
+2025-09-19 12:29:06,445 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\08jan.csv with separator ','
+2025-09-19 12:29:06,612 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\08jan.csv in chunks
+2025-09-19 12:29:07,449 - flood_health - INFO - Read 10244 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\08jan.csv
+2025-09-19 12:29:09,047 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\08March.csv with separator ','
+2025-09-19 12:29:09,313 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\08March.csv in chunks
+2025-09-19 12:29:10,101 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\09March.csv with separator ','
+2025-09-19 12:29:10,186 - flood_health - INFO - Read 13572 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\08March.csv
+2025-09-19 12:29:10,212 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\09March.csv in chunks
+2025-09-19 12:29:10,913 - flood_health - INFO - Read 12095 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\09March.csv
+2025-09-19 12:29:17,515 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\10feb.csv with separator ','
+2025-09-19 12:29:17,770 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\10feb.csv in chunks
+2025-09-19 12:29:18,709 - flood_health - INFO - Read 13270 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\10feb.csv
+2025-09-19 12:29:23,589 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\10jan.csv with separator ','
+2025-09-19 12:29:23,886 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\10jan.csv in chunks
+2025-09-19 12:29:24,421 - flood_health - INFO - Read 2367 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\10jan.csv
+2025-09-19 12:29:26,848 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\10March.csv with separator ','
+2025-09-19 12:29:27,083 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\10March.csv in chunks
+2025-09-19 12:29:27,091 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\11feb.csv with separator ','
+2025-09-19 12:29:27,208 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\11feb.csv in chunks
+2025-09-19 12:29:27,554 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\11jan.csv with separator ','
+2025-09-19 12:29:27,673 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\11jan.csv in chunks
+2025-09-19 12:29:27,673 - flood_health - INFO - Read 12790 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\10March.csv
+2025-09-19 12:29:27,713 - flood_health - INFO - Read 12829 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\11feb.csv
+2025-09-19 12:29:28,044 - flood_health - INFO - Read 10310 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\11jan.csv
+2025-09-19 12:29:35,666 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\11March.csv with separator ','
+2025-09-19 12:29:35,773 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\11March.csv in chunks
+2025-09-19 12:29:36,553 - flood_health - INFO - Read 11793 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\11March.csv
+2025-09-19 12:29:38,672 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\12feb.csv with separator ','
+2025-09-19 12:29:38,788 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\12feb.csv in chunks
+2025-09-19 12:29:40,008 - flood_health - INFO - Read 16348 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\12feb.csv
+2025-09-19 12:29:42,777 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\12jan.csv with separator ','
+2025-09-19 12:29:42,913 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\12jan.csv in chunks
+2025-09-19 12:29:43,066 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\12March.csv with separator ','
+2025-09-19 12:29:43,217 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\12March.csv in chunks
+2025-09-19 12:29:43,942 - flood_health - INFO - Read 3023 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\12March.csv
+2025-09-19 12:29:44,154 - flood_health - INFO - Read 11991 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\12jan.csv
+2025-09-19 12:29:48,513 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\13feb.csv with separator ','
+2025-09-19 12:29:48,690 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\13feb.csv in chunks
+2025-09-19 12:29:50,300 - flood_health - INFO - Read 12699 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\13feb.csv
+2025-09-19 12:29:50,850 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\13jan.csv with separator ','
+2025-09-19 12:29:50,916 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\13jan.csv in chunks
+2025-09-19 12:29:52,039 - flood_health - INFO - Read 13052 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\13jan.csv
+2025-09-19 12:29:59,178 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\13March.csv with separator ','
+2025-09-19 12:29:59,269 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\13March.csv in chunks
+2025-09-19 12:29:59,704 - flood_health - INFO - Read 5500 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\13March.csv
+2025-09-19 12:30:00,094 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\14feb.csv with separator ','
+2025-09-19 12:30:00,246 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\14feb.csv in chunks
+2025-09-19 12:30:01,651 - flood_health - INFO - Read 12027 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\14feb.csv
+2025-09-19 12:30:04,650 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\14jan.csv with separator ','
+2025-09-19 12:30:05,004 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\14jan.csv in chunks
+2025-09-19 12:30:06,502 - flood_health - INFO - Read 13149 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\14jan.csv
+2025-09-19 12:30:06,669 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\14March.csv with separator ','
+2025-09-19 12:30:06,706 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\14March.csv in chunks
+2025-09-19 12:30:07,805 - flood_health - INFO - Read 13870 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\14March.csv
+2025-09-19 12:30:08,809 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\15feb.csv with separator ','
+2025-09-19 12:30:09,058 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\15feb.csv in chunks
+2025-09-19 12:30:10,326 - flood_health - INFO - Read 8431 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\15feb.csv
+2025-09-19 12:30:16,417 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\15jan.csv with separator ','
+2025-09-19 12:30:16,449 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\15jan.csv in chunks
+2025-09-19 12:30:17,197 - flood_health - INFO - Read 15144 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\15jan.csv
+2025-09-19 12:30:23,003 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\15March.csv with separator ','
+2025-09-19 12:30:23,147 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\15March.csv in chunks
+2025-09-19 12:30:24,285 - flood_health - INFO - Read 14426 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\15March.csv
+2025-09-19 12:30:25,022 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\16feb.csv with separator ','
+2025-09-19 12:30:25,132 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\16feb.csv in chunks
+2025-09-19 12:30:25,541 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\16jan.csv with separator ','
+2025-09-19 12:30:25,749 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\16jan.csv in chunks
+2025-09-19 12:30:25,842 - flood_health - INFO - Read 3295 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\16feb.csv
+2025-09-19 12:30:27,392 - flood_health - INFO - Read 12236 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\16jan.csv
+2025-09-19 12:30:30,441 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\16March.csv with separator ','
+2025-09-19 12:30:30,785 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\16March.csv in chunks
+2025-09-19 12:30:32,618 - flood_health - INFO - Read 12722 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\16March.csv
+2025-09-19 12:30:33,641 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\17feb.csv with separator ','
+2025-09-19 12:30:33,684 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\17feb.csv in chunks
+2025-09-19 12:30:35,127 - flood_health - INFO - Read 11167 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\17feb.csv
+2025-09-19 12:30:40,422 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\17jan.csv with separator ','
+2025-09-19 12:30:40,572 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\17jan.csv in chunks
+2025-09-19 12:30:41,761 - flood_health - INFO - Read 14080 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\17jan.csv
+2025-09-19 12:30:43,766 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\17march.csv with separator ','
+2025-09-19 12:30:44,017 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\17march.csv in chunks
+2025-09-19 12:30:45,027 - flood_health - INFO - Read 6099 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\17march.csv
+2025-09-19 12:30:47,927 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\18feb.csv with separator ','
+2025-09-19 12:30:48,107 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\18feb.csv in chunks
+2025-09-19 12:30:48,858 - flood_health - INFO - Read 12581 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\18feb.csv
+2025-09-19 12:30:49,764 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\18jan.csv with separator ','
+2025-09-19 12:30:50,007 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\18jan.csv in chunks
+2025-09-19 12:30:51,708 - flood_health - INFO - Read 13482 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\18jan.csv
+2025-09-19 12:30:52,957 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\19feb.csv with separator ','
+2025-09-19 12:30:53,254 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\19feb.csv in chunks
+2025-09-19 12:30:54,253 - flood_health - INFO - Read 13563 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\19feb.csv
+2025-09-19 12:30:59,190 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\19jan.csv with separator ','
+2025-09-19 12:30:59,308 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\19jan.csv in chunks
+2025-09-19 12:31:00,773 - flood_health - INFO - Read 13625 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\19jan.csv
+2025-09-19 12:31:04,415 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\1jan.csv with separator ','
+2025-09-19 12:31:04,551 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\1jan.csv in chunks
+2025-09-19 12:31:06,028 - flood_health - INFO - Read 20446 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\1jan.csv
+2025-09-19 12:31:08,196 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\20feb.csv with separator ','
+2025-09-19 12:31:08,423 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\20feb.csv in chunks
+2025-09-19 12:31:10,090 - flood_health - INFO - Read 18642 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\20feb.csv
+2025-09-19 12:31:11,209 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\20jan.csv with separator ','
+2025-09-19 12:31:11,321 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\20jan.csv in chunks
+2025-09-19 12:31:13,106 - flood_health - INFO - Read 16102 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\20jan.csv
+2025-09-19 12:31:17,108 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\21feb.csv with separator ','
+2025-09-19 12:31:17,319 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\21feb.csv in chunks
+2025-09-19 12:31:18,318 - flood_health - INFO - Read 11595 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\21feb.csv
+2025-09-19 12:31:25,630 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\21jan.csv with separator ','
+2025-09-19 12:31:25,973 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\21jan.csv in chunks
+2025-09-19 12:31:27,466 - flood_health - INFO - Read 30932 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\21jan.csv
+2025-09-19 12:31:27,791 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\22feb.csv with separator ','
+2025-09-19 12:31:27,836 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\22feb.csv in chunks
+2025-09-19 12:31:28,636 - flood_health - INFO - Read 10763 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\22feb.csv
+2025-09-19 12:31:34,753 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\22jan.csv with separator ','
+2025-09-19 12:31:35,022 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\22jan.csv in chunks
+2025-09-19 12:31:35,323 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\23feb.csv with separator ','
+2025-09-19 12:31:35,613 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\23feb.csv in chunks
+2025-09-19 12:31:36,221 - flood_health - INFO - Read 12651 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\22jan.csv
+2025-09-19 12:31:36,585 - flood_health - INFO - Read 13234 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\23feb.csv
+2025-09-19 12:31:44,396 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\23jan.csv with separator ','
+2025-09-19 12:31:44,516 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\23jan.csv in chunks
+2025-09-19 12:31:45,216 - flood_health - INFO - Read 11810 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\23jan.csv
+2025-09-19 12:31:50,178 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\24feb.csv with separator ','
+2025-09-19 12:31:50,255 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\24feb.csv in chunks
+2025-09-19 12:31:51,110 - flood_health - INFO - Read 12002 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\24feb.csv
+2025-09-19 12:31:52,174 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\24jan.csv with separator ','
+2025-09-19 12:31:52,583 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\24jan.csv in chunks
+2025-09-19 12:31:53,551 - flood_health - INFO - Read 7980 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\24jan.csv
+2025-09-19 12:31:58,837 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\25feb.csv with separator ','
+2025-09-19 12:31:59,226 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\25feb.csv in chunks
+2025-09-19 12:31:59,777 - flood_health - INFO - Read 13209 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\25feb.csv
+2025-09-19 12:32:06,084 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\25jan.csv with separator ','
+2025-09-19 12:32:06,092 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\26feb.csv with separator ','
+2025-09-19 12:32:06,166 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\25jan.csv in chunks
+2025-09-19 12:32:06,166 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\26feb.csv in chunks
+2025-09-19 12:32:06,581 - flood_health - INFO - Read 9753 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\25jan.csv
+2025-09-19 12:32:06,854 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\26jan.csv with separator ','
+2025-09-19 12:32:06,877 - flood_health - INFO - Read 13131 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\26feb.csv
+2025-09-19 12:32:06,877 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\26jan.csv in chunks
+2025-09-19 12:32:07,346 - flood_health - INFO - Read 13208 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\26jan.csv
+2025-09-19 12:32:17,075 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\27feb.csv with separator ','
+2025-09-19 12:32:17,244 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\27feb.csv in chunks
+2025-09-19 12:32:18,176 - flood_health - INFO - Read 14744 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\27feb.csv
+2025-09-19 12:32:19,916 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\27jan.csv with separator ','
+2025-09-19 12:32:20,258 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\27jan.csv in chunks
+2025-09-19 12:32:21,840 - flood_health - INFO - Read 13897 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\27jan.csv
+2025-09-19 12:32:22,523 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\28feb.csv with separator ','
+2025-09-19 12:32:22,629 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\28feb.csv in chunks
+2025-09-19 12:32:23,689 - flood_health - INFO - Read 14019 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\28feb.csv
+2025-09-19 12:32:23,990 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\28jan.csv with separator ','
+2025-09-19 12:32:24,147 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\28jan.csv in chunks
+2025-09-19 12:32:24,866 - flood_health - INFO - Read 8606 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\28jan.csv
+2025-09-19 12:32:34,895 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\29jan.csv with separator ','
+2025-09-19 12:32:34,940 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\29jan.csv in chunks
+2025-09-19 12:32:37,094 - flood_health - INFO - Read 28304 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\29jan.csv
+2025-09-19 12:32:37,506 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\2jan.csv with separator ','
+2025-09-19 12:32:37,601 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\2jan.csv in chunks
+2025-09-19 12:32:37,849 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\30jan.csv with separator ','
+2025-09-19 12:32:37,901 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\30jan.csv in chunks
+2025-09-19 12:32:38,049 - flood_health - INFO - Read 2094 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\30jan.csv
+2025-09-19 12:32:38,051 - flood_health - INFO - Read 15312 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\2jan.csv
+2025-09-19 12:32:40,083 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\31jan.csv with separator ','
+2025-09-19 12:32:40,294 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\31jan.csv in chunks
+2025-09-19 12:32:41,316 - flood_health - INFO - Read 1377 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\31jan.csv
+2025-09-19 12:32:41,374 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\3jan.csv with separator ','
+2025-09-19 12:32:41,707 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\3jan.csv in chunks
+2025-09-19 12:32:44,340 - flood_health - INFO - Read 18473 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\3jan.csv
+2025-09-19 12:32:44,897 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\6jan.csv with separator ','
+2025-09-19 12:32:45,109 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\6jan.csv in chunks
+2025-09-19 12:32:46,284 - flood_health - INFO - Read 13418 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\6jan.csv
+2025-09-19 12:32:49,128 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\7jan.csv with separator ','
+2025-09-19 12:32:49,506 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\7jan.csv in chunks
+2025-09-19 12:32:52,574 - flood_health - INFO - Read 32000 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\7jan.csv
+2025-09-19 12:32:57,669 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\9feb.csv with separator ','
+2025-09-19 12:32:57,968 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\9feb.csv in chunks
+2025-09-19 12:32:58,837 - flood_health - INFO - Read 12733 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\9feb.csv
+2025-09-19 12:33:03,557 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\9jan.csv with separator ','
+2025-09-19 12:33:03,771 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\9jan.csv in chunks
+2025-09-19 12:33:04,241 - flood_health - INFO - Read 2452 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\9jan.csv
+2025-09-19 12:42:12,630 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\01feb.csv with separator ','
+2025-09-19 12:42:12,639 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\01March.csv with separator ','
+2025-09-19 12:42:12,639 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\01feb.csv in chunks
+2025-09-19 12:42:12,639 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\01March.csv in chunks
+2025-09-19 12:42:12,820 - flood_health - INFO - Read 5034 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\01feb.csv
+2025-09-19 12:42:12,820 - flood_health - INFO - Read 8746 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\01March.csv
+2025-09-19 12:42:15,283 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\02feb.csv with separator ','
+2025-09-19 12:42:15,429 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\02feb.csv in chunks
+2025-09-19 12:42:15,570 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\02March.csv with separator ','
+2025-09-19 12:42:15,592 - flood_health - INFO - Read 3496 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\02feb.csv
+2025-09-19 12:42:15,592 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\02March.csv in chunks
+2025-09-19 12:42:15,714 - flood_health - INFO - Read 5384 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\02March.csv
+2025-09-19 12:42:16,284 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\03feb.csv with separator ','
+2025-09-19 12:42:16,404 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\03feb.csv in chunks
+2025-09-19 12:42:16,914 - flood_health - INFO - Read 7334 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\03feb.csv
+2025-09-19 12:42:17,333 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\03March.csv with separator ','
+2025-09-19 12:42:17,352 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\03March.csv in chunks
+2025-09-19 12:42:18,234 - flood_health - INFO - Read 14363 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\03March.csv
+2025-09-19 12:42:18,672 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\04feb.csv with separator ','
+2025-09-19 12:42:18,705 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\04feb.csv in chunks
+2025-09-19 12:42:19,582 - flood_health - INFO - Read 13887 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\04feb.csv
+2025-09-19 12:42:22,359 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\04jan.csv with separator ','
+2025-09-19 12:42:22,445 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\04jan.csv in chunks
+2025-09-19 12:42:23,496 - flood_health - INFO - Read 15643 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\04jan.csv
+2025-09-19 12:42:23,834 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\04March.csv with separator ','
+2025-09-19 12:42:23,861 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\04March.csv in chunks
+2025-09-19 12:42:24,662 - flood_health - INFO - Read 14103 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\04March.csv
+2025-09-19 12:42:26,407 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\05feb.csv with separator ','
+2025-09-19 12:42:26,551 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\05feb.csv in chunks
+2025-09-19 12:42:27,392 - flood_health - INFO - Read 13308 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\05feb.csv
+2025-09-19 12:42:27,721 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\05jan.csv with separator ','
+2025-09-19 12:42:27,750 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\05jan.csv in chunks
+2025-09-19 12:42:28,675 - flood_health - INFO - Read 13600 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\05jan.csv
+2025-09-19 12:42:30,394 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\05March.csv with separator ','
+2025-09-19 12:42:30,500 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\05March.csv in chunks
+2025-09-19 12:42:31,501 - flood_health - INFO - Read 14297 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\05March.csv
+2025-09-19 12:42:31,754 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\06feb.csv with separator ','
+2025-09-19 12:42:31,797 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\06feb.csv in chunks
+2025-09-19 12:42:32,664 - flood_health - INFO - Read 13816 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\06feb.csv
+2025-09-19 12:42:34,521 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\06March.csv with separator ','
+2025-09-19 12:42:34,613 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\06March.csv in chunks
+2025-09-19 12:42:35,421 - flood_health - INFO - Read 11300 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\06March.csv
+2025-09-19 12:42:36,067 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\07feb.csv with separator ','
+2025-09-19 12:42:36,158 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\07feb.csv in chunks
+2025-09-19 12:42:37,202 - flood_health - INFO - Read 11996 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\07feb.csv
+2025-09-19 12:42:37,769 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\07March.csv with separator ','
+2025-09-19 12:42:37,859 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\07March.csv in chunks
+2025-09-19 12:42:38,768 - flood_health - INFO - Read 12510 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\07March.csv
+2025-09-19 12:42:40,517 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\08feb.csv with separator ','
+2025-09-19 12:42:40,668 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\08feb.csv in chunks
+2025-09-19 12:42:41,447 - flood_health - INFO - Read 11872 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\08feb.csv
+2025-09-19 12:42:41,546 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\08jan.csv with separator ','
+2025-09-19 12:42:41,586 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\08jan.csv in chunks
+2025-09-19 12:42:42,332 - flood_health - INFO - Read 10244 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\08jan.csv
+2025-09-19 12:42:43,858 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\08March.csv with separator ','
+2025-09-19 12:42:44,017 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\08March.csv in chunks
+2025-09-19 12:42:44,931 - flood_health - INFO - Read 13572 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\08March.csv
+2025-09-19 12:42:45,321 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\09March.csv with separator ','
+2025-09-19 12:42:45,367 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\09March.csv in chunks
+2025-09-19 12:42:46,092 - flood_health - INFO - Read 12095 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\09March.csv
+2025-09-19 12:42:47,797 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\10feb.csv with separator ','
+2025-09-19 12:42:47,887 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\10feb.csv in chunks
+2025-09-19 12:42:48,777 - flood_health - INFO - Read 13270 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\10feb.csv
+2025-09-19 12:42:48,944 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\10jan.csv with separator ','
+2025-09-19 12:42:48,959 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\10jan.csv in chunks
+2025-09-19 12:42:49,120 - flood_health - INFO - Read 2367 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\10jan.csv
+2025-09-19 12:42:50,783 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\10March.csv with separator ','
+2025-09-19 12:42:50,898 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\10March.csv in chunks
+2025-09-19 12:42:51,300 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\11feb.csv with separator ','
+2025-09-19 12:42:51,315 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\11feb.csv in chunks
+2025-09-19 12:42:51,399 - flood_health - INFO - Read 12790 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\10March.csv
+2025-09-19 12:42:51,609 - flood_health - INFO - Read 12829 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\11feb.csv
+2025-09-19 12:42:54,488 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\11jan.csv with separator ','
+2025-09-19 12:42:54,669 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\11jan.csv in chunks
+2025-09-19 12:42:55,205 - flood_health - INFO - Read 10310 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\11jan.csv
+2025-09-19 12:42:55,205 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\11March.csv with separator ','
+2025-09-19 12:42:55,221 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\11March.csv in chunks
+2025-09-19 12:42:55,771 - flood_health - INFO - Read 11793 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\11March.csv
+2025-09-19 12:42:56,329 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\12feb.csv with separator ','
+2025-09-19 12:42:56,374 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\12feb.csv in chunks
+2025-09-19 12:42:57,471 - flood_health - INFO - Read 16348 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\12feb.csv
+2025-09-19 12:42:58,113 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\12jan.csv with separator ','
+2025-09-19 12:42:58,128 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\12jan.csv in chunks
+2025-09-19 12:42:58,888 - flood_health - INFO - Read 11991 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\12jan.csv
+2025-09-19 12:43:00,927 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\12March.csv with separator ','
+2025-09-19 12:43:01,064 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\12March.csv in chunks
+2025-09-19 12:43:01,378 - flood_health - INFO - Read 3023 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\12March.csv
+2025-09-19 12:43:02,552 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\13feb.csv with separator ','
+2025-09-19 12:43:02,552 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\13jan.csv with separator ','
+2025-09-19 12:43:02,567 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\13feb.csv in chunks
+2025-09-19 12:43:02,567 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\13jan.csv in chunks
+2025-09-19 12:43:02,757 - flood_health - INFO - Read 13052 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\13jan.csv
+2025-09-19 12:43:02,766 - flood_health - INFO - Read 12699 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\13feb.csv
+2025-09-19 12:43:06,326 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\13March.csv with separator ','
+2025-09-19 12:43:06,341 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\13March.csv in chunks
+2025-09-19 12:43:06,341 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\14feb.csv with separator ','
+2025-09-19 12:43:06,341 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\14feb.csv in chunks
+2025-09-19 12:43:06,415 - flood_health - INFO - Read 5500 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\13March.csv
+2025-09-19 12:43:06,590 - flood_health - INFO - Read 12027 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\14feb.csv
+2025-09-19 12:43:07,450 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\14jan.csv with separator ','
+2025-09-19 12:43:07,518 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\14jan.csv in chunks
+2025-09-19 12:43:08,412 - flood_health - INFO - Read 13149 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\14jan.csv
+2025-09-19 12:43:09,346 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\14March.csv with separator ','
+2025-09-19 12:43:09,436 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\14March.csv in chunks
+2025-09-19 12:43:10,361 - flood_health - INFO - Read 13870 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\14March.csv
+2025-09-19 12:43:11,551 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\15feb.csv with separator ','
+2025-09-19 12:43:11,673 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\15feb.csv in chunks
+2025-09-19 12:43:12,261 - flood_health - INFO - Read 8431 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\15feb.csv
+2025-09-19 12:43:14,096 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\15jan.csv with separator ','
+2025-09-19 12:43:14,231 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\15jan.csv in chunks
+2025-09-19 12:43:14,687 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\15March.csv with separator ','
+2025-09-19 12:43:14,790 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\15March.csv in chunks
+2025-09-19 12:43:14,798 - flood_health - INFO - Read 15144 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\15jan.csv
+2025-09-19 12:43:15,291 - flood_health - INFO - Read 14426 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\15March.csv
+2025-09-19 12:43:17,977 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\16feb.csv with separator ','
+2025-09-19 12:43:18,191 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\16feb.csv in chunks
+2025-09-19 12:43:18,519 - flood_health - INFO - Read 3295 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\16feb.csv
+2025-09-19 12:43:19,203 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\16jan.csv with separator ','
+2025-09-19 12:43:19,295 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\16jan.csv in chunks
+2025-09-19 12:43:19,724 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\16March.csv with separator ','
+2025-09-19 12:43:19,804 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\16March.csv in chunks
+2025-09-19 12:43:19,818 - flood_health - INFO - Read 12236 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\16jan.csv
+2025-09-19 12:43:20,303 - flood_health - INFO - Read 12722 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\16March.csv
+2025-09-19 12:43:22,618 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\17feb.csv with separator ','
+2025-09-19 12:43:22,742 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\17feb.csv in chunks
+2025-09-19 12:43:23,527 - flood_health - INFO - Read 11167 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\17feb.csv
+2025-09-19 12:43:23,758 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\17jan.csv with separator ','
+2025-09-19 12:43:23,789 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\17jan.csv in chunks
+2025-09-19 12:43:24,561 - flood_health - INFO - Read 14080 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\17jan.csv
+2025-09-19 12:43:27,611 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\17march.csv with separator ','
+2025-09-19 12:43:27,733 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\17march.csv in chunks
+2025-09-19 12:43:28,317 - flood_health - INFO - Read 6099 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\17march.csv
+2025-09-19 12:43:28,449 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\18feb.csv with separator ','
+2025-09-19 12:43:28,467 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\18feb.csv in chunks
+2025-09-19 12:43:29,251 - flood_health - INFO - Read 12581 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\18feb.csv
+2025-09-19 12:43:29,645 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\18jan.csv with separator ','
+2025-09-19 12:43:29,655 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\18jan.csv in chunks
+2025-09-19 12:43:30,580 - flood_health - INFO - Read 13482 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\18jan.csv
+2025-09-19 12:43:32,029 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\19feb.csv with separator ','
+2025-09-19 12:43:32,159 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\19feb.csv in chunks
+2025-09-19 12:43:33,037 - flood_health - INFO - Read 13563 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\19feb.csv
+2025-09-19 12:43:33,648 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\19jan.csv with separator ','
+2025-09-19 12:43:33,678 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\19jan.csv in chunks
+2025-09-19 12:43:34,560 - flood_health - INFO - Read 13625 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\19jan.csv
+2025-09-19 12:43:36,553 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\1jan.csv with separator ','
+2025-09-19 12:43:36,646 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\1jan.csv in chunks
+2025-09-19 12:43:37,844 - flood_health - INFO - Read 20446 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\1jan.csv
+2025-09-19 12:43:37,860 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\20feb.csv with separator ','
+2025-09-19 12:43:37,874 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\20feb.csv in chunks
+2025-09-19 12:43:38,751 - flood_health - INFO - Read 18642 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\20feb.csv
+2025-09-19 12:43:40,933 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\20jan.csv with separator ','
+2025-09-19 12:43:41,039 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\20jan.csv in chunks
+2025-09-19 12:43:41,988 - flood_health - INFO - Read 16102 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\20jan.csv
+2025-09-19 12:43:42,054 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\21feb.csv with separator ','
+2025-09-19 12:43:42,090 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\21feb.csv in chunks
+2025-09-19 12:43:42,521 - flood_health - INFO - Read 11595 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\21feb.csv
+2025-09-19 12:43:45,646 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\21jan.csv with separator ','
+2025-09-19 12:43:45,799 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\21jan.csv in chunks
+2025-09-19 12:43:46,071 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\22feb.csv with separator ','
+2025-09-19 12:43:46,071 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\22feb.csv in chunks
+2025-09-19 12:43:46,204 - flood_health - INFO - Read 10763 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\22feb.csv
+2025-09-19 12:43:46,399 - flood_health - INFO - Read 30932 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\21jan.csv
+2025-09-19 12:43:48,615 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\22jan.csv with separator ','
+2025-09-19 12:43:48,706 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\22jan.csv in chunks
+2025-09-19 12:43:49,757 - flood_health - INFO - Read 12651 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\22jan.csv
+2025-09-19 12:43:53,986 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\23feb.csv with separator ','
+2025-09-19 12:43:53,986 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\23jan.csv with separator ','
+2025-09-19 12:43:54,001 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\23feb.csv in chunks
+2025-09-19 12:43:54,001 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\23jan.csv in chunks
+2025-09-19 12:43:54,137 - flood_health - INFO - Read 11810 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\23jan.csv
+2025-09-19 12:43:54,227 - flood_health - INFO - Read 13234 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\23feb.csv
+2025-09-19 12:43:57,392 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\24feb.csv with separator ','
+2025-09-19 12:43:57,452 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\24feb.csv in chunks
+2025-09-19 12:43:57,467 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\24jan.csv with separator ','
+2025-09-19 12:43:57,467 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\24jan.csv in chunks
+2025-09-19 12:43:57,632 - flood_health - INFO - Read 7980 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\24jan.csv
+2025-09-19 12:43:57,653 - flood_health - INFO - Read 12002 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\24feb.csv
+2025-09-19 12:43:59,889 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\25feb.csv with separator ','
+2025-09-19 12:43:59,989 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\25feb.csv in chunks
+2025-09-19 12:44:00,790 - flood_health - INFO - Read 13209 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\25feb.csv
+2025-09-19 12:44:00,790 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\25jan.csv with separator ','
+2025-09-19 12:44:00,804 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\25jan.csv in chunks
+2025-09-19 12:44:01,058 - flood_health - INFO - Read 9753 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\25jan.csv
+2025-09-19 12:44:03,650 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\26feb.csv with separator ','
+2025-09-19 12:44:03,786 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\26feb.csv in chunks
+2025-09-19 12:44:04,288 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\26jan.csv with separator ','
+2025-09-19 12:44:04,293 - flood_health - INFO - Read 13131 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\26feb.csv
+2025-09-19 12:44:04,297 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\26jan.csv in chunks
+2025-09-19 12:44:04,772 - flood_health - INFO - Read 13208 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\26jan.csv
+2025-09-19 12:44:07,019 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\27feb.csv with separator ','
+2025-09-19 12:44:07,141 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\27feb.csv in chunks
+2025-09-19 12:44:08,099 - flood_health - INFO - Read 14744 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\27feb.csv
+2025-09-19 12:44:08,236 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\27jan.csv with separator ','
+2025-09-19 12:44:08,266 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\27jan.csv in chunks
+2025-09-19 12:44:09,118 - flood_health - INFO - Read 13897 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\27jan.csv
+2025-09-19 12:44:10,488 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\28feb.csv with separator ','
+2025-09-19 12:44:10,596 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\28feb.csv in chunks
+2025-09-19 12:44:11,493 - flood_health - INFO - Read 14019 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\28feb.csv
+2025-09-19 12:44:11,896 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\28jan.csv with separator ','
+2025-09-19 12:44:11,928 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\28jan.csv in chunks
+2025-09-19 12:44:12,533 - flood_health - INFO - Read 8606 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\28jan.csv
+2025-09-19 12:44:14,660 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\29jan.csv with separator ','
+2025-09-19 12:44:14,765 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\29jan.csv in chunks
+2025-09-19 12:44:15,121 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\2jan.csv with separator ','
+2025-09-19 12:44:15,129 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\2jan.csv in chunks
+2025-09-19 12:44:15,436 - flood_health - INFO - Read 15312 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\2jan.csv
+2025-09-19 12:44:15,436 - flood_health - INFO - Read 28304 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\29jan.csv
+2025-09-19 12:44:17,374 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\30jan.csv with separator ','
+2025-09-19 12:44:17,473 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\30jan.csv in chunks
+2025-09-19 12:44:17,762 - flood_health - INFO - Read 2094 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\30jan.csv
+2025-09-19 12:44:18,184 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\31jan.csv with separator ','
+2025-09-19 12:44:18,348 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\31jan.csv in chunks
+2025-09-19 12:44:18,348 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\3jan.csv with separator ','
+2025-09-19 12:44:18,375 - flood_health - INFO - Read 1377 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\31jan.csv
+2025-09-19 12:44:18,375 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\3jan.csv in chunks
+2025-09-19 12:44:18,738 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\6jan.csv with separator ','
+2025-09-19 12:44:18,826 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\6jan.csv in chunks
+2025-09-19 12:44:18,853 - flood_health - INFO - Read 18473 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\3jan.csv
+2025-09-19 12:44:19,016 - flood_health - INFO - Read 13418 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\6jan.csv
+2025-09-19 12:44:22,390 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\7jan.csv with separator ','
+2025-09-19 12:44:22,565 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\7jan.csv in chunks
+2025-09-19 12:44:22,833 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\9feb.csv with separator ','
+2025-09-19 12:44:22,833 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\9feb.csv in chunks
+2025-09-19 12:44:22,989 - flood_health - INFO - Read 12733 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\9feb.csv
+2025-09-19 12:44:23,167 - flood_health - INFO - Read 32000 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\7jan.csv
+2025-09-19 12:44:26,207 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\9jan.csv with separator ','
+2025-09-19 12:44:26,299 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\9jan.csv in chunks
+2025-09-19 12:44:26,612 - flood_health - INFO - Read 2452 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\9jan.csv
+2025-09-19 12:44:27,077 - flood_health - ERROR - Errors: ["Failed 07feb.csv: name 'detect_floods_sliding' is not defined", "Failed 12jan.csv: name 'detect_floods_sliding' is not defined", "Failed 1jan.csv: name 'detect_floods_sliding' is not defined", "Failed 06March.csv: name 'detect_floods_sliding' is not defined", "Failed 15March.csv: name 'detect_floods_sliding' is not defined", "Failed 30jan.csv: name 'detect_floods_sliding' is not defined", "Failed 03feb.csv: name 'detect_floods_sliding' is not defined", "Failed 24jan.csv: name 'detect_floods_sliding' is not defined", "Failed 12feb.csv: name 'detect_floods_sliding' is not defined", "Failed 06feb.csv: name 'detect_floods_sliding' is not defined", "Failed 19jan.csv: name 'detect_floods_sliding' is not defined", "Failed 01feb.csv: name 'detect_floods_sliding' is not defined", "Failed 15jan.csv: name 'detect_floods_sliding' is not defined", "Failed 2jan.csv: name 'detect_floods_sliding' is not defined", "Failed 24feb.csv: name 'detect_floods_sliding' is not defined", "Failed 11March.csv: name 'detect_floods_sliding' is not defined", "Failed 05March.csv: name 'detect_floods_sliding' is not defined", "Failed 19feb.csv: name 'detect_floods_sliding' is not defined", "Failed 15feb.csv: name 'detect_floods_sliding' is not defined", "Failed 29jan.csv: name 'detect_floods_sliding' is not defined", "Failed 05jan.csv: name 'detect_floods_sliding' is not defined", "Failed 23jan.csv: name 'detect_floods_sliding' is not defined", "Failed 11jan.csv: name 'detect_floods_sliding' is not defined", "Failed 18jan.csv: name 'detect_floods_sliding' is not defined", "Failed 05feb.csv: name 'detect_floods_sliding' is not defined", "Failed 14March.csv: name 'detect_floods_sliding' is not defined", "Failed 01March.csv: name 'detect_floods_sliding' is not defined", "Failed 28jan.csv: name 'detect_floods_sliding' is not defined", "Failed 11feb.csv: name 'detect_floods_sliding' is not defined", "Failed 23feb.csv: name 'detect_floods_sliding' is not defined", "Failed 04March.csv: name 'detect_floods_sliding' is not defined", "Failed 18feb.csv: name 'detect_floods_sliding' is not defined", "Failed 25feb.csv: name 'detect_floods_sliding' is not defined", "Failed 10March.csv: name 'detect_floods_sliding' is not defined", "Failed 14jan.csv: name 'detect_floods_sliding' is not defined", "Failed 28feb.csv: name 'detect_floods_sliding' is not defined", "Failed 22jan.csv: name 'detect_floods_sliding' is not defined", "Failed 04jan.csv: name 'detect_floods_sliding' is not defined", "Failed 9jan.csv: name 'detect_floods_sliding' is not defined", "Failed 10jan.csv: name 'detect_floods_sliding' is not defined", "Failed 17march.csv: name 'detect_floods_sliding' is not defined", "Failed 14feb.csv: name 'detect_floods_sliding' is not defined", "Failed 27jan.csv: name 'detect_floods_sliding' is not defined", "Failed 04feb.csv: name 'detect_floods_sliding' is not defined", "Failed 22feb.csv: name 'detect_floods_sliding' is not defined", "Failed 10feb.csv: name 'detect_floods_sliding' is not defined", "Failed 9feb.csv: name 'detect_floods_sliding' is not defined", "Failed 17jan.csv: name 'detect_floods_sliding' is not defined", "Failed 03March.csv: name 'detect_floods_sliding' is not defined", "Failed 13March.csv: name 'detect_floods_sliding' is not defined", "Failed 27feb.csv: name 'detect_floods_sliding' is not defined", "Failed 09March.csv: name 'detect_floods_sliding' is not defined", "Failed 21jan.csv: name 'detect_floods_sliding' is not defined", "Failed 7jan.csv: name 'detect_floods_sliding' is not defined", "Failed 17feb.csv: name 'detect_floods_sliding' is not defined", "Failed 08March.csv: name 'detect_floods_sliding' is not defined", "Failed 13jan.csv: name 'detect_floods_sliding' is not defined", "Failed 26jan.csv: name 'detect_floods_sliding' is not defined", "Failed 21feb.csv: name 'detect_floods_sliding' is not defined", "Failed 6jan.csv: name 'detect_floods_sliding' is not defined", "Failed 08jan.csv: name 'detect_floods_sliding' is not defined", "Failed 16March.csv: name 'detect_floods_sliding' is not defined", "Failed 02feb.csv: name 'detect_floods_sliding' is not defined", "Failed 13feb.csv: name 'detect_floods_sliding' is not defined", "Failed 26feb.csv: name 'detect_floods_sliding' is not defined", "Failed 20jan.csv: name 'detect_floods_sliding' is not defined", "Failed 08feb.csv: name 'detect_floods_sliding' is not defined", "Failed 3jan.csv: name 'detect_floods_sliding' is not defined", "Failed 16jan.csv: name 'detect_floods_sliding' is not defined", "Failed 12March.csv: name 'detect_floods_sliding' is not defined", "Failed 25jan.csv: name 'detect_floods_sliding' is not defined", "Failed 07March.csv: name 'detect_floods_sliding' is not defined", "Failed 20feb.csv: name 'detect_floods_sliding' is not defined", "Failed 02March.csv: name 'detect_floods_sliding' is not defined", "Failed 31jan.csv: name 'detect_floods_sliding' is not defined", "Failed 16feb.csv: name 'detect_floods_sliding' is not defined"]
+2025-09-19 12:44:27,077 - flood_health - INFO - Saved to merged_flood_health.json
+2025-09-19 12:45:41,615 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\01feb.csv with separator ','
+2025-09-19 12:45:41,615 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\01March.csv with separator ','
+2025-09-19 12:45:41,633 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\01March.csv in chunks
+2025-09-19 12:45:41,638 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\01feb.csv in chunks
+2025-09-19 12:45:41,768 - flood_health - INFO - Read 5034 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\01feb.csv
+2025-09-19 12:45:41,786 - flood_health - INFO - Read 8746 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\01March.csv
+2025-09-19 12:45:43,676 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\02feb.csv with separator ','
+2025-09-19 12:45:43,841 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\02feb.csv in chunks
+2025-09-19 12:45:44,067 - flood_health - INFO - Read 3496 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\02feb.csv
+2025-09-19 12:45:44,067 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\02March.csv with separator ','
+2025-09-19 12:45:44,089 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\02March.csv in chunks
+2025-09-19 12:45:44,597 - flood_health - INFO - Read 5384 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\02March.csv
+2025-09-19 12:45:44,753 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\03feb.csv with separator ','
+2025-09-19 12:45:44,768 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\03feb.csv in chunks
+2025-09-19 12:45:45,313 - flood_health - INFO - Read 7334 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\03feb.csv
+2025-09-19 12:45:45,879 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\03March.csv with separator ','
+2025-09-19 12:45:46,018 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\03March.csv in chunks
+2025-09-19 12:45:47,080 - flood_health - INFO - Read 14363 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\03March.csv
+2025-09-19 12:45:47,222 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\04feb.csv with separator ','
+2025-09-19 12:45:47,237 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\04feb.csv in chunks
+2025-09-19 12:45:47,886 - flood_health - INFO - Read 13887 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\04feb.csv
+2025-09-19 12:45:50,373 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\04jan.csv with separator ','
+2025-09-19 12:45:50,517 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\04jan.csv in chunks
+2025-09-19 12:45:51,541 - flood_health - INFO - Read 15643 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\04jan.csv
+2025-09-19 12:45:51,817 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\04March.csv with separator ','
+2025-09-19 12:45:51,846 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\04March.csv in chunks
+2025-09-19 12:45:52,675 - flood_health - INFO - Read 14103 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\04March.csv
+2025-09-19 12:45:54,513 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\05feb.csv with separator ','
+2025-09-19 12:45:54,665 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\05feb.csv in chunks
+2025-09-19 12:45:55,422 - flood_health - INFO - Read 13308 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\05feb.csv
+2025-09-19 12:45:55,844 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\05jan.csv with separator ','
+2025-09-19 12:45:55,880 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\05jan.csv in chunks
+2025-09-19 12:45:56,922 - flood_health - INFO - Read 13600 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\05jan.csv
+2025-09-19 12:45:58,623 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\05March.csv with separator ','
+2025-09-19 12:45:58,797 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\05March.csv in chunks
+2025-09-19 12:45:59,805 - flood_health - INFO - Read 14297 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\05March.csv
+2025-09-19 12:46:00,723 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\06feb.csv with separator ','
+2025-09-19 12:46:00,858 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\06feb.csv in chunks
+2025-09-19 12:46:01,727 - flood_health - INFO - Read 13816 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\06feb.csv
+2025-09-19 12:46:02,594 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\06March.csv with separator ','
+2025-09-19 12:46:02,724 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\06March.csv in chunks
+2025-09-19 12:46:03,400 - flood_health - INFO - Read 11300 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\06March.csv
+2025-09-19 12:46:05,197 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\07feb.csv with separator ','
+2025-09-19 12:46:05,349 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\07feb.csv in chunks
+2025-09-19 12:46:06,300 - flood_health - INFO - Read 11996 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\07feb.csv
+2025-09-19 12:46:06,300 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\07March.csv with separator ','
+2025-09-19 12:46:06,322 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\07March.csv in chunks
+2025-09-19 12:46:06,998 - flood_health - INFO - Read 12510 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\07March.csv
+2025-09-19 12:46:09,077 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\08feb.csv with separator ','
+2025-09-19 12:46:09,253 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\08feb.csv in chunks
+2025-09-19 12:46:10,014 - flood_health - INFO - Read 11872 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\08feb.csv
+2025-09-19 12:46:10,047 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\08jan.csv with separator ','
+2025-09-19 12:46:10,047 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\08jan.csv in chunks
+2025-09-19 12:46:10,462 - flood_health - INFO - Read 10244 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\08jan.csv
+2025-09-19 12:46:12,939 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\08March.csv with separator ','
+2025-09-19 12:46:13,045 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\08March.csv in chunks
+2025-09-19 12:46:13,875 - flood_health - INFO - Read 13572 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\08March.csv
+2025-09-19 12:46:13,875 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\09March.csv with separator ','
+2025-09-19 12:46:13,883 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\09March.csv in chunks
+2025-09-19 12:46:14,357 - flood_health - INFO - Read 12095 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\09March.csv
+2025-09-19 12:46:17,185 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\10feb.csv with separator ','
+2025-09-19 12:46:17,305 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\10feb.csv in chunks
+2025-09-19 12:46:17,731 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\10jan.csv with separator ','
+2025-09-19 12:46:17,749 - flood_health - INFO - Read 13270 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\10feb.csv
+2025-09-19 12:46:17,749 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\10jan.csv in chunks
+2025-09-19 12:46:17,803 - flood_health - INFO - Read 2367 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\10jan.csv
+2025-09-19 12:46:18,852 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\10March.csv with separator ','
+2025-09-19 12:46:18,966 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\10March.csv in chunks
+2025-09-19 12:46:19,970 - flood_health - INFO - Read 12790 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\10March.csv
+2025-09-19 12:46:20,506 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\11feb.csv with separator ','
+2025-09-19 12:46:20,600 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\11feb.csv in chunks
+2025-09-19 12:46:21,371 - flood_health - INFO - Read 12829 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\11feb.csv
+2025-09-19 12:46:22,957 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\11jan.csv with separator ','
+2025-09-19 12:46:23,092 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\11jan.csv in chunks
+2025-09-19 12:46:23,752 - flood_health - INFO - Read 10310 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\11jan.csv
+2025-09-19 12:46:24,442 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\11March.csv with separator ','
+2025-09-19 12:46:24,581 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\11March.csv in chunks
+2025-09-19 12:46:25,347 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\12feb.csv with separator ','
+2025-09-19 12:46:25,347 - flood_health - INFO - Read 11793 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\11March.csv
+2025-09-19 12:46:25,355 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\12feb.csv in chunks
+2025-09-19 12:46:25,784 - flood_health - INFO - Read 16348 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\12feb.csv
+2025-09-19 12:46:27,909 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\12jan.csv with separator ','
+2025-09-19 12:46:28,049 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\12jan.csv in chunks
+2025-09-19 12:46:29,047 - flood_health - INFO - Read 11991 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\12jan.csv
+2025-09-19 12:46:29,418 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\12March.csv with separator ','
+2025-09-19 12:46:29,464 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\12March.csv in chunks
+2025-09-19 12:46:29,722 - flood_health - INFO - Read 3023 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\12March.csv
+2025-09-19 12:46:31,418 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\13feb.csv with separator ','
+2025-09-19 12:46:31,557 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\13feb.csv in chunks
+2025-09-19 12:46:31,800 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\13jan.csv with separator ','
+2025-09-19 12:46:31,878 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\13jan.csv in chunks
+2025-09-19 12:46:31,893 - flood_health - INFO - Read 12699 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\13feb.csv
+2025-09-19 12:46:32,079 - flood_health - INFO - Read 13052 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\13jan.csv
+2025-09-19 12:46:34,783 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\13March.csv with separator ','
+2025-09-19 12:46:34,868 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\13March.csv in chunks
+2025-09-19 12:46:35,508 - flood_health - INFO - Read 5500 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\13March.csv
+2025-09-19 12:46:35,760 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\14feb.csv with separator ','
+2025-09-19 12:46:35,880 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\14feb.csv in chunks
+2025-09-19 12:46:36,743 - flood_health - INFO - Read 12027 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\14feb.csv
+2025-09-19 12:46:36,777 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\14jan.csv with separator ','
+2025-09-19 12:46:36,777 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\14jan.csv in chunks
+2025-09-19 12:46:37,543 - flood_health - INFO - Read 13149 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\14jan.csv
+2025-09-19 12:46:39,059 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\14March.csv with separator ','
+2025-09-19 12:46:39,176 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\14March.csv in chunks
+2025-09-19 12:46:40,057 - flood_health - INFO - Read 13870 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\14March.csv
+2025-09-19 12:46:40,905 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\15feb.csv with separator ','
+2025-09-19 12:46:41,025 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\15feb.csv in chunks
+2025-09-19 12:46:41,671 - flood_health - INFO - Read 8431 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\15feb.csv
+2025-09-19 12:46:44,418 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\15jan.csv with separator ','
+2025-09-19 12:46:44,570 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\15jan.csv in chunks
+2025-09-19 12:46:44,892 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\15March.csv with separator ','
+2025-09-19 12:46:45,025 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\15March.csv in chunks
+2025-09-19 12:46:45,061 - flood_health - INFO - Read 15144 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\15jan.csv
+2025-09-19 12:46:45,319 - flood_health - INFO - Read 14426 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\15March.csv
+2025-09-19 12:46:48,754 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\16feb.csv with separator ','
+2025-09-19 12:46:48,922 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\16feb.csv in chunks
+2025-09-19 12:46:49,383 - flood_health - INFO - Read 3295 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\16feb.csv
+2025-09-19 12:46:49,449 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\16jan.csv with separator ','
+2025-09-19 12:46:49,499 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\16jan.csv in chunks
+2025-09-19 12:46:50,198 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\16March.csv with separator ','
+2025-09-19 12:46:50,206 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\16March.csv in chunks
+2025-09-19 12:46:50,238 - flood_health - INFO - Read 12236 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\16jan.csv
+2025-09-19 12:46:50,415 - flood_health - INFO - Read 12722 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\16March.csv
+2025-09-19 12:46:53,596 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\17feb.csv with separator ','
+2025-09-19 12:46:53,746 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\17feb.csv in chunks
+2025-09-19 12:46:54,129 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\17jan.csv with separator ','
+2025-09-19 12:46:54,137 - flood_health - INFO - Read 11167 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\17feb.csv
+2025-09-19 12:46:54,137 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\17jan.csv in chunks
+2025-09-19 12:46:54,688 - flood_health - INFO - Read 14080 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\17jan.csv
+2025-09-19 12:46:56,723 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\17march.csv with separator ','
+2025-09-19 12:46:56,846 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\17march.csv in chunks
+2025-09-19 12:46:57,425 - flood_health - INFO - Read 6099 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\17march.csv
+2025-09-19 12:46:58,420 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\18feb.csv with separator ','
+2025-09-19 12:46:58,519 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\18feb.csv in chunks
+2025-09-19 12:46:59,124 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\18jan.csv with separator ','
+2025-09-19 12:46:59,132 - flood_health - INFO - Read 12581 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\18feb.csv
+2025-09-19 12:46:59,136 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\18jan.csv in chunks
+2025-09-19 12:46:59,442 - flood_health - INFO - Read 13482 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\18jan.csv
+2025-09-19 12:47:02,323 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\19feb.csv with separator ','
+2025-09-19 12:47:02,423 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\19feb.csv in chunks
+2025-09-19 12:47:03,148 - flood_health - INFO - Read 13563 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\19feb.csv
+2025-09-19 12:47:03,157 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\19jan.csv with separator ','
+2025-09-19 12:47:03,174 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\19jan.csv in chunks
+2025-09-19 12:47:03,970 - flood_health - INFO - Read 13625 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\19jan.csv
+2025-09-19 12:47:05,802 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\1jan.csv with separator ','
+2025-09-19 12:47:05,954 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\1jan.csv in chunks
+2025-09-19 12:47:07,186 - flood_health - INFO - Read 20446 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\1jan.csv
+2025-09-19 12:47:07,390 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\20feb.csv with separator ','
+2025-09-19 12:47:07,406 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\20feb.csv in chunks
+2025-09-19 12:47:08,489 - flood_health - INFO - Read 18642 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\20feb.csv
+2025-09-19 12:47:10,076 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\20jan.csv with separator ','
+2025-09-19 12:47:10,253 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\20jan.csv in chunks
+2025-09-19 12:47:11,133 - flood_health - INFO - Read 16102 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\20jan.csv
+2025-09-19 12:47:11,738 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\21feb.csv with separator ','
+2025-09-19 12:47:11,829 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\21feb.csv in chunks
+2025-09-19 12:47:12,717 - flood_health - INFO - Read 11595 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\21feb.csv
+2025-09-19 12:47:14,691 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\21jan.csv with separator ','
+2025-09-19 12:47:14,836 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\21jan.csv in chunks
+2025-09-19 12:47:15,892 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\22feb.csv with separator ','
+2025-09-19 12:47:15,892 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\22feb.csv in chunks
+2025-09-19 12:47:15,927 - flood_health - INFO - Read 30932 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\21jan.csv
+2025-09-19 12:47:16,054 - flood_health - INFO - Read 10763 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\22feb.csv
+2025-09-19 12:47:20,285 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\22jan.csv with separator ','
+2025-09-19 12:47:20,375 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\22jan.csv in chunks
+2025-09-19 12:47:21,226 - flood_health - INFO - Read 12651 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\22jan.csv
+2025-09-19 12:47:22,367 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\23feb.csv with separator ','
+2025-09-19 12:47:22,503 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\23feb.csv in chunks
+2025-09-19 12:47:23,450 - flood_health - INFO - Read 13234 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\23feb.csv
+2025-09-19 12:47:24,057 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\23jan.csv with separator ','
+2025-09-19 12:47:24,125 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\23jan.csv in chunks
+2025-09-19 12:47:24,991 - flood_health - INFO - Read 11810 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\23jan.csv
+2025-09-19 12:47:25,830 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\24feb.csv with separator ','
+2025-09-19 12:47:25,990 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\24feb.csv in chunks
+2025-09-19 12:47:26,873 - flood_health - INFO - Read 12002 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\24feb.csv
+2025-09-19 12:47:27,817 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\24jan.csv with separator ','
+2025-09-19 12:47:27,945 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\24jan.csv in chunks
+2025-09-19 12:47:28,503 - flood_health - INFO - Read 7980 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\24jan.csv
+2025-09-19 12:47:29,985 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\25feb.csv with separator ','
+2025-09-19 12:47:30,091 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\25feb.csv in chunks
+2025-09-19 12:47:30,837 - flood_health - INFO - Read 13209 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\25feb.csv
+2025-09-19 12:47:30,837 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\25jan.csv with separator ','
+2025-09-19 12:47:30,860 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\25jan.csv in chunks
+2025-09-19 12:47:31,285 - flood_health - INFO - Read 9753 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\25jan.csv
+2025-09-19 12:47:33,921 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\26feb.csv with separator ','
+2025-09-19 12:47:34,051 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\26feb.csv in chunks
+2025-09-19 12:47:34,330 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\26jan.csv with separator ','
+2025-09-19 12:47:34,391 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\26jan.csv in chunks
+2025-09-19 12:47:34,411 - flood_health - INFO - Read 13131 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\26feb.csv
+2025-09-19 12:47:34,598 - flood_health - INFO - Read 13208 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\26jan.csv
+2025-09-19 12:47:37,921 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\27feb.csv with separator ','
+2025-09-19 12:47:38,101 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\27feb.csv in chunks
+2025-09-19 12:47:38,373 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\27jan.csv with separator ','
+2025-09-19 12:47:38,475 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\27jan.csv in chunks
+2025-09-19 12:47:38,479 - flood_health - INFO - Read 14744 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\27feb.csv
+2025-09-19 12:47:38,881 - flood_health - INFO - Read 13897 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\27jan.csv
+2025-09-19 12:47:41,986 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\28feb.csv with separator ','
+2025-09-19 12:47:42,108 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\28feb.csv in chunks
+2025-09-19 12:47:42,313 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\28jan.csv with separator ','
+2025-09-19 12:47:42,328 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\28jan.csv in chunks
+2025-09-19 12:47:42,417 - flood_health - INFO - Read 14019 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\28feb.csv
+2025-09-19 12:47:42,511 - flood_health - INFO - Read 8606 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\28jan.csv
+2025-09-19 12:47:45,532 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\29jan.csv with separator ','
+2025-09-19 12:47:45,633 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\29jan.csv in chunks
+2025-09-19 12:47:45,687 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\2jan.csv with separator ','
+2025-09-19 12:47:45,695 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\2jan.csv in chunks
+2025-09-19 12:47:46,014 - flood_health - INFO - Read 15312 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\2jan.csv
+2025-09-19 12:47:46,043 - flood_health - INFO - Read 28304 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\29jan.csv
+2025-09-19 12:47:47,748 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\30jan.csv with separator ','
+2025-09-19 12:47:47,862 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\30jan.csv in chunks
+2025-09-19 12:47:48,247 - flood_health - INFO - Read 2094 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\30jan.csv
+2025-09-19 12:47:49,330 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\31jan.csv with separator ','
+2025-09-19 12:47:49,330 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\3jan.csv with separator ','
+2025-09-19 12:47:49,345 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\31jan.csv in chunks
+2025-09-19 12:47:49,345 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\3jan.csv in chunks
+2025-09-19 12:47:49,382 - flood_health - INFO - Read 1377 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\31jan.csv
+2025-09-19 12:47:49,937 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\6jan.csv with separator ','
+2025-09-19 12:47:49,952 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\6jan.csv in chunks
+2025-09-19 12:47:49,966 - flood_health - INFO - Read 18473 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\3jan.csv
+2025-09-19 12:47:50,396 - flood_health - INFO - Read 13418 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\6jan.csv
+2025-09-19 12:47:53,956 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\7jan.csv with separator ','
+2025-09-19 12:47:54,091 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\7jan.csv in chunks
+2025-09-19 12:47:54,459 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\9feb.csv with separator ','
+2025-09-19 12:47:54,474 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\9feb.csv in chunks
+2025-09-19 12:47:54,752 - flood_health - INFO - Read 12733 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\9feb.csv
+2025-09-19 12:47:54,752 - flood_health - INFO - Read 32000 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\7jan.csv
+2025-09-19 12:47:58,318 - flood_health - INFO - Reading file D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\9jan.csv with separator ','
+2025-09-19 12:47:58,326 - flood_health - INFO - Processing D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\9jan.csv in chunks
+2025-09-19 12:47:58,355 - flood_health - INFO - Read 2452 rows from D:\Qbit-dynamics\alarm_system\alarm_backend\ALARM_DATA_DIR\PVC-I (Jan, Feb, Mar) EVENTS\9jan.csv
+2025-09-19 12:47:58,800 - flood_health - ERROR - Errors: ["Failed 12March.csv: name 'detect_floods_sliding' is not defined", "Failed 07March.csv: name 'detect_floods_sliding' is not defined", "Failed 20feb.csv: name 'detect_floods_sliding' is not defined", "Failed 16feb.csv: name 'detect_floods_sliding' is not defined", "Failed 31jan.csv: name 'detect_floods_sliding' is not defined", "Failed 07feb.csv: name 'detect_floods_sliding' is not defined", "Failed 25feb.csv: name 'detect_floods_sliding' is not defined", "Failed 12jan.csv: name 'detect_floods_sliding' is not defined", "Failed 1jan.csv: name 'detect_floods_sliding' is not defined", "Failed 06March.csv: name 'detect_floods_sliding' is not defined", "Failed 15March.csv: name 'detect_floods_sliding' is not defined", "Failed 30jan.csv: name 'detect_floods_sliding' is not defined", "Failed 02feb.csv: name 'detect_floods_sliding' is not defined", "Failed 24jan.csv: name 'detect_floods_sliding' is not defined", "Failed 12feb.csv: name 'detect_floods_sliding' is not defined", "Failed 06feb.csv: name 'detect_floods_sliding' is not defined", "Failed 19jan.csv: name 'detect_floods_sliding' is not defined", "Failed 15jan.csv: name 'detect_floods_sliding' is not defined", "Failed 2jan.csv: name 'detect_floods_sliding' is not defined", "Failed 24feb.csv: name 'detect_floods_sliding' is not defined", "Failed 11March.csv: name 'detect_floods_sliding' is not defined", "Failed 05March.csv: name 'detect_floods_sliding' is not defined", "Failed 19feb.csv: name 'detect_floods_sliding' is not defined", "Failed 15feb.csv: name 'detect_floods_sliding' is not defined", "Failed 29jan.csv: name 'detect_floods_sliding' is not defined", "Failed 05jan.csv: name 'detect_floods_sliding' is not defined", "Failed 23jan.csv: name 'detect_floods_sliding' is not defined", "Failed 11jan.csv: name 'detect_floods_sliding' is not defined", "Failed 01feb.csv: name 'detect_floods_sliding' is not defined", "Failed 18jan.csv: name 'detect_floods_sliding' is not defined", "Failed 05feb.csv: name 'detect_floods_sliding' is not defined", "Failed 14March.csv: name 'detect_floods_sliding' is not defined", "Failed 28jan.csv: name 'detect_floods_sliding' is not defined", "Failed 11feb.csv: name 'detect_floods_sliding' is not defined", "Failed 23feb.csv: name 'detect_floods_sliding' is not defined", "Failed 04March.csv: name 'detect_floods_sliding' is not defined", "Failed 18feb.csv: name 'detect_floods_sliding' is not defined", "Failed 10March.csv: name 'detect_floods_sliding' is not defined", "Failed 14jan.csv: name 'detect_floods_sliding' is not defined", "Failed 28feb.csv: name 'detect_floods_sliding' is not defined", "Failed 22jan.csv: name 'detect_floods_sliding' is not defined", "Failed 04jan.csv: name 'detect_floods_sliding' is not defined", "Failed 9jan.csv: name 'detect_floods_sliding' is not defined", "Failed 10jan.csv: name 'detect_floods_sliding' is not defined", "Failed 17march.csv: name 'detect_floods_sliding' is not defined", "Failed 14feb.csv: name 'detect_floods_sliding' is not defined", "Failed 27jan.csv: name 'detect_floods_sliding' is not defined", "Failed 04feb.csv: name 'detect_floods_sliding' is not defined", "Failed 22feb.csv: name 'detect_floods_sliding' is not defined", "Failed 10feb.csv: name 'detect_floods_sliding' is not defined", "Failed 9feb.csv: name 'detect_floods_sliding' is not defined", "Failed 17jan.csv: name 'detect_floods_sliding' is not defined", "Failed 03March.csv: name 'detect_floods_sliding' is not defined", "Failed 13March.csv: name 'detect_floods_sliding' is not defined", "Failed 27feb.csv: name 'detect_floods_sliding' is not defined", "Failed 09March.csv: name 'detect_floods_sliding' is not defined", "Failed 21jan.csv: name 'detect_floods_sliding' is not defined", "Failed 7jan.csv: name 'detect_floods_sliding' is not defined", "Failed 01March.csv: name 'detect_floods_sliding' is not defined", "Failed 03feb.csv: name 'detect_floods_sliding' is not defined", "Failed 17feb.csv: name 'detect_floods_sliding' is not defined", "Failed 08March.csv: name 'detect_floods_sliding' is not defined", "Failed 13jan.csv: name 'detect_floods_sliding' is not defined", "Failed 26jan.csv: name 'detect_floods_sliding' is not defined", "Failed 21feb.csv: name 'detect_floods_sliding' is not defined", "Failed 02March.csv: name 'detect_floods_sliding' is not defined", "Failed 6jan.csv: name 'detect_floods_sliding' is not defined", "Failed 08jan.csv: name 'detect_floods_sliding' is not defined", "Failed 16March.csv: name 'detect_floods_sliding' is not defined", "Failed 13feb.csv: name 'detect_floods_sliding' is not defined", "Failed 26feb.csv: name 'detect_floods_sliding' is not defined", "Failed 25jan.csv: name 'detect_floods_sliding' is not defined", "Failed 20jan.csv: name 'detect_floods_sliding' is not defined", "Failed 08feb.csv: name 'detect_floods_sliding' is not defined", "Failed 3jan.csv: name 'detect_floods_sliding' is not defined", "Failed 16jan.csv: name 'detect_floods_sliding' is not defined"]
+2025-09-19 12:47:58,815 - flood_health - INFO - Saved to merged_flood_health.json
+2025-09-19 12:47:58,847 - flood_health - INFO - Comparison saved to comparison.json
